@@ -3,7 +3,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  color: #000;
+  color: #243146;
 }
 img {
   max-width: 100%;
@@ -442,7 +442,7 @@ textarea {
   font-size: 26px;
   font-weight: 700;
   padding-left: 45px;
-  background-image: url(../../img/icon-phone.svg);
+  background-image: url(../img/icon-phone.svg);
   background-repeat: no-repeat;
   background-position: left 15px center;
 }
@@ -463,7 +463,7 @@ textarea {
   border-bottom: 11px solid #31aa67;
 }
 .promo {
-  background-image: url(../../img/screen-1-mobile.jpg);
+  background-image: url(../img/screen-1-mobile.jpg);
   background-size: cover;
 }
 .promo__wrap {
@@ -505,8 +505,9 @@ textarea {
   margin-bottom: 20px;
 }
 .btn {
-  width: 100%;
+  max-width: 300px;
   min-height: 70px;
+  margin: 0 auto;
   box-sizing: border-box;
   display: -ms-flexbox;
   display: flex;
@@ -521,9 +522,22 @@ textarea {
   text-align: center;
   text-decoration: none;
   color: #fff;
+  border-radius: 50px;
+}
+.btn--red {
   background-color: #de4d33;
   background-image: linear-gradient(to bottom, #cc5741, #b23f28);
-  border-radius: 50px;
+}
+.btn--green {
+  background-color: #31aa67;
+  background-image: linear-gradient(to bottom, #75b473, #5c9b5b);
+}
+.benefits {
+  background-image: url(../img/screen-2-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  padding-bottom: 100px;
 }
 .benefits__title {
   font-size: 36px;
@@ -600,4 +614,150 @@ textarea {
 .benefits__block:nth-child(5) .benefits__text {
   padding-left: 65px;
   padding-right: 65px;
+}
+.help {
+  background-image: url(../img/grass.png);
+  background-position: bottom;
+  background-repeat: repeat-x;
+  padding-bottom: 125px;
+}
+.help__wrap {
+  width: 300px;
+  background-color: #31aa67;
+  color: #fff;
+  padding: 5px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+.help__title {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.help__text {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+.help__form {
+  margin: 0 auto;
+}
+.help__form input {
+  border: none;
+  border-radius: 50px;
+  width: 100%;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 300;
+  color: #243146;
+  margin-bottom: 5px;
+  padding: 10px 30px;
+  box-sizing: border-box;
+}
+.help__form input::-webkit-input-placeholder {
+  opacity: 1;
+}
+.help__form input:-ms-input-placeholder {
+  opacity: 1;
+}
+.help__form input::placeholder {
+  opacity: 1;
+}
+.help__btn {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  border-radius: 50px;
+  width: 100%;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  background-color: #f8ea12;
+  background-image: linear-gradient(to bottom, #dcd335, #f5ec4e);
+}
+.help__policy {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  margin: 5px auto;
+}
+.recept__wrap {
+  width: 320px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: 0 auto;
+}
+.recept__text {
+  text-align: center;
+  font-size: 23px;
+  line-height: 28px;
+  font-weight: 400;
+}
+.recept__text span {
+  display: block;
+  color: #31aa67;
+}
+.recept__text strong {
+  display: block;
+}
+.recept__img {
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.recept__slogan {
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 23px;
+  line-height: 28px;
+  font-weight: 300;
+  text-align: center;
+  background-color: #f8ea12;
+}
+.recept__slogan strong {
+  display: block;
+  font-size: 28px;
+  line-height: 35px;
+  font-weight: 500;
+}
+.title-h2 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #243146;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.video__block {
+  width: 320px;
+}
+.video {
+  background-image: url(../../img/screen-3-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+.video__block {
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 75px;
+}
+.video__block picture img {
+  margin-top: 20px;
 }
