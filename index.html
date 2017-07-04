@@ -192,7 +192,7 @@
             </div>
         </section>
         <section class="specialists">
-            <p class="specialists__title">У нас есть все для эффективного и правильного питания</p>
+            <h3 class="title-h3 specialists__title">У нас есть все для эффективного и правильного питания</h3>
             <ul class="specialists__list">
                 <li class="specialists__person">
                     <img src="img/photo-1.jpg" alt="Фото" class="specialists__photo" width="267" height="354">
@@ -200,7 +200,7 @@
                 </li>
                 <li class="specialists__person">
                     <img src="img/photo-2.jpg" alt="Фото" class="specialists__photo" width="267" height="354">
-                    <p class="specialists__name">Специалист по КСИ-диагностике</p>                    
+                    <p class="specialists__name">Специалист<br>по КСИ-диагностике</p>                    
                 </li>
                 <li class="specialists__person">
                     <img src="img/photo-3.jpg" alt="Фото" class="specialists__photo" width="267" height="354">
@@ -223,12 +223,12 @@
         <section class="additions">
             <p class="additions__title">Для достижения максимально положительного эффекта от голодания вы получаете дополнительно:</p>
             <ul class="additions__list">
-                <li class="additions__item">Многолетний опыт команды врачей, работающий на вас</li>
+                <li class="additions__item">Многолетний опыт команды врачей, работающий на вас</li>
                 <li class="additions__item">Забота и внимание персонала, заботатерапия</li>
                 <li class="additions__item">Атмосфера покоя и умиротворения, душевное равновесие</li>
                 <li class="additions__item">Чистейший воздух кавказкого заповедника</li>
-                <li class="additions__item">Чистый воздух, вода и природа вокруг вас 24/7</li>
-                <li class="additions__item">Позитивное впечатление от окружения, компания единомышленников</li>
+                <li class="additions__item">Чистый воздух, вода и природа вокруг<br>вас 24/7</li>
+                <li class="additions__item">Позитивное впечатление<br>от окружения, компания единомышленников</li>
                 <li class="additions__item">Постоянная диагностика и сопровождение</li>
                 <li class="additions__item">Термальные источники и бальнеолечение</li>
             </ul>
@@ -263,7 +263,7 @@
                     <input type="text" name="name" id="name" class="help__name" placeholder="Имя *" required>
                     <input type="tel" name="phone" id="phone" class="help__phone" placeholder="Телефон *" required>
                     <input type="text" name="code" id="code" class="help__code" placeholder="Промокод на скидку">
-                    <button type="submit" class="help__btn">Получить рекомендацию!</button>
+                    <button type="submit" class="help__btn">Забронировать!</button>
                 </form>
                 <a href="" class="help__policy">Политика конфиденциальности</a>
             </div>            
@@ -456,34 +456,37 @@
             <p class="price__comment">*В рамках программы отмена или замена процедур возможна только по показаниям или по согласованию с врачом.</p>
         </section>
         <section class="arrival">
-            <h2 class="arrival__h2">ДОКУМЕНТЫ ДЛЯ ЗАЕЗДА</h2>
-            <p class="arrival_subtitle">При заезде необходимо иметь при себе:</p>
-            <p class="arrival__text">Санаторно-курортную карту (при отсутствии санаторно-курортной карты просим предоставить выписку из амбулаторной карты о состоянии здоровья, а так же необходимо предоставить УЗИ брюшной полости, почек (давностью не более 3 месяцев), а так же общий анализ крови и мочи (давностью не более одного месяца), ЭКГ с расшифровкой.</p>
-            <p class="arrival__text">Для грязелечения необходимо: дамам заключение гинеколога, мужчинам заключение уролога. Для гостей, которые планируют делать процедуры очищения кишечника, необходимо привезти результаты обследования  колоно или сигмаскопии, или заключение проктолога.</p>
+            <div class="arrival__wrap">
+                <h2 class="arrival__h2">ДОКУМЕНТЫ ДЛЯ ЗАЕЗДА</h2>
+                <p class="arrival_subtitle">При заезде необходимо иметь при себе:</p>
+                <p class="arrival__text"><b>Санаторно-курортную карту</b> (при отсутствии санаторно-курортной карты просим предоставить выписку из амбулаторной карты о состоянии здоровья, а так же необходимо предоставить <b>УЗИ брюшной полости, почек</b> (давностью не более 3 месяцев), а так же общий анализ крови и мочи (давностью не более одного месяца), ЭКГ с расшифровкой.</p>
+                <p class="arrival__text">Для грязелечения необходимо: дамам заключение <b>гинеколога</b>, мужчинам заключение <b><i>уролога</i></b>. Для гостей, которые планируют делать процедуры очищения кишечника, необходимо привезти результаты обследования <b>колоно или сигмаскопии, или заключение проктолога</b>.</p>
+                <img src="img/doctor.png" alt="ДОКУМЕНТЫ" class="arrival__img" width="276" height="296">
+            </div>
         </section>
         <section class="tariff">
-            <p class="tariff_title">В санатории вы можете сделать за дополнительную плату:</p>
+            <p class="tariff__title">В санатории вы можете сделать за дополнительную плату:</p>
             <ul class="tariff__block">
-                <li class="tariff__item">УЗИ брюшной полости и почек <span>2420 руб</span></li>
-                <li class="tariff__item">ОАК <span>530 руб</span></li>
-                <li class="tariff__item">ЭКГ с расшифровкой <span>530 руб</span></li>
-                <li class="tariff__item">Биохимию крови <span>по прайсу</span></li>
+                <li class="tariff__item"><span>УЗИ брюшной полости и почек <b>2420 руб</b></span></li>
+                <li class="tariff__item"><span>ОАК <b>530 руб</b></span></li>
+                <li class="tariff__item"><span>ЭКГ с расшифровкой <b>530 руб</b></span></li>
+                <li class="tariff__item"><span>Биохимию крови <b>по прайсу</b></span></li>
             </ul>
         </section>
         <section class="additions">
             <p class="additions__title">Помимо самой программы голодания, дополнительно вы получаете:</p>
             <ul class="additions__list">
-                <li class="additions__item"><span>БИБЛИОТЕКА И НАСТОЛЬНЫЕ ИГРЫ</span>Для теплых дружеских вечеров</li>
-                <li class="additions__item"><span>WI-FI</span>Вся наша территория покрыта бесплатным доступом в интернет</li>
-                <li class="additions__item"><span>Фито-чаи и полезные травяные отвары</span></li>
-                <li class="additions__item"><span>лекции от психолога</span>У нас есть штатный психолог</li>
-                <li class="additions__item"><span>АРТ-ТЕРАПИЯ</span>"Сам себе волшебник" - арт-терапия для детей, поделки своими руками</li>
-                <li class="additions__item"><span>бесплатная ОХРАНЯЕМАЯ ПАРКОВКА</span>Ваша машина будет в безопасности все время!</li>
-                <li class="additions__item"><span>Прогулки около горной реки и в горы</span></li>
-                <li class="additions__item"><span>ЗДОРОВЬЕ И ДОЛГОЛЕТИЕ</span>При выполнении всех рекомендаций врача</li>
+                <li class="additions__item additions__item--plus"><span>БИБЛИОТЕКА И НАСТОЛЬНЫЕ ИГРЫ</span>Для теплых дружеских вечеров</li>
+                <li class="additions__item additions__item--plus"><span>WI-FI</span>Вся наша территория покрыта бесплатным доступом в интернет</li>
+                <li class="additions__item additions__item--plus"><span>Фито-чаи и полезные травяные отвары</span></li>
+                <li class="additions__item additions__item--plus"><span>лекции от психолога</span>У нас есть штатный психолог</li>
+                <li class="additions__item additions__item--plus"><span>АРТ-ТЕРАПИЯ</span>"Сам себе волшебник" - арт-терапия для детей, поделки своими руками</li>
+                <li class="additions__item additions__item--plus"><span>бесплатная ОХРАНЯЕМАЯ ПАРКОВКА</span>Ваша машина будет в безопасности все время!</li>
+                <li class="additions__item additions__item--plus"><span>Прогулки около горной реки и в горы</span></li>
+                <li class="additions__item additions__item--plus"><span>ЗДОРОВЬЕ И ДОЛГОЛЕТИЕ</span>При выполнении всех рекомендаций врача</li>
             </ul>
         </section>
-        <section class="timer">
+        <section class="timer timer--mobile">
             <div class="help__wrap help__wrap--timer">
                 <p class="help__title">Экономьте сегодня!</p>
                 <p class="help__text">оставьте заявку сегодня и получите скидку на проживание в номере <span>-20%</span></p>
@@ -516,7 +519,7 @@
                         <p class="timer__descr">секунд</p>
                     </div>
                 </div>
-                <p class="timer__comment">осталось только <span>2</span> номера участвующих в акции!</p>
+                <p class="timer__comment">осталось только <span>2</span><br>номера участвующих в акции!</p>
             </div>
         </section>    
         <section class="about">
