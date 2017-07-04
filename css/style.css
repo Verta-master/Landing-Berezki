@@ -494,12 +494,14 @@ textarea {
   font-size: 43px;
   line-height: 45px;
   text-align: center;
+  max-width: 300px;
 }
 .promo__text {
   font-size: 20px;
   line-height: 25px;
   text-align: center;
   margin-top: 0;
+  max-width: 300px;
 }
 .promo__text span {
   font-size: 23px;
@@ -515,7 +517,7 @@ textarea {
 }
 .btn {
   max-width: 300px;
-  min-height: 70px;
+  height: 70px;
   margin: 0 auto;
   box-sizing: border-box;
   display: -ms-flexbox;
@@ -563,7 +565,7 @@ textarea {
   list-style-type: none;
   padding: 10px;
   margin: 0 auto;
-  width: 320px;
+  width: 300px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -606,6 +608,7 @@ textarea {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 10px;
+  max-width: 300px;
 }
 .benefits__text {
   font-size: 18px;
@@ -614,6 +617,7 @@ textarea {
   text-align: center;
   padding-left: 35px;
   padding-right: 35px;
+  max-width: 300px;
 }
 .benefits__text span {
   display: block;
@@ -762,6 +766,7 @@ textarea {
   text-align: center;
   font-weight: 500;
   margin-bottom: 10px;
+  max-width: 300px;
 }
 .video {
   background-image: url(../../img/screen-3-mobile.jpg);
@@ -861,6 +866,7 @@ textarea {
   color: #fff;
   text-align: center;
   margin: 0 auto;
+  max-width: 300px;
 }
 .reviews {
   background-image: url(../img/screen-4-mobile.jpg);
@@ -918,17 +924,21 @@ textarea {
   text-align: center;
   padding-left: 25px;
   padding-right: 25px;
+  max-width: 300px;
 }
 .reviews__block {
   padding-left: 7px;
   padding-right: 7px;
+  max-width: 300px;
 }
 .reviews__text {
   line-height: 20px;
+  max-width: 300px;
 }
 .reviews__comment {
   font-size: 15px;
   line-height: 18px;
+  max-width: 300px;
 }
 .reviews__link {
   font-size: 28px;
@@ -986,6 +996,7 @@ textarea {
   font-size: 20px;
   line-height: 28px;
   font-weight: 700;
+  max-width: 300px;
 }
 .specialization__h2 span {
   font-size: 23px;
@@ -1000,6 +1011,7 @@ textarea {
   font-size: 20px;
   line-height: 28px;
   font-weight: 500;
+  max-width: 300px;
 }
 .specialization__text span {
   color: #31aa67;
@@ -1047,7 +1059,7 @@ textarea {
   margin-bottom: 20px;
   margin-top: 0;
   width: 267px;
-  min-height: 60px;
+  height: 60px;
   box-sizing: border-box;
   display: -ms-flexbox;
   display: flex;
@@ -1092,6 +1104,7 @@ textarea {
 .additions__item {
   text-align: center;
   padding-top: 105px;
+  max-width: 300px;
   position: relative;
   font-size: 20px;
   line-height: 22px;
