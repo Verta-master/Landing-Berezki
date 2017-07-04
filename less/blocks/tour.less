@@ -1,0 +1,29 @@
+.tour__list {
+    width: 300px;
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+}
+
+.tour__item:nth-child(2n) .tour__name {
+    text-align: right;
+}
+
+.tour__item {
+    position: relative;
+    
+    &::after {
+        content: "";
+        position: absolute;
+        top: 43px;
+        left: 4px;
+        width: 290px;
+        height: 155px;
+        border: 2px solid @green;
+        border-radius: 10px;
+    }
+}
+
+.tour__img {
+    border-radius: 10px;
+}
