@@ -9,32 +9,40 @@
 </head>
 <body>
     <header class="header-main">
-        <div class="user-block">
-            <img src="img/logo.png" alt="Логотип" class="logo" width="105" height="40">
-            <div class="user-block__phone">+7 (918) 252-80-88</div>
-            <div class="user-block__phone">+7 (928) 210-02-17</div>
-            <div class="user-block__phone">+7 (861) 290-02-17</div>
+        <div class="header-main__wrap">
+            <div class="user-block">
+                <img src="img/logo.png" alt="Логотип" class="logo" width="105" height="40">
+                <div class="user-block__phone">+7 (918) 252-80-88</div>
+                <div class="user-block__phone">+7 (928) 210-02-17</div>
+                <div class="user-block__phone">+7 (861) 290-02-17</div>
+            </div>
+            <nav class="menu menu--closed menu--nojs">
+                <button class="menu__toggle"></button>
+                <ul class="menu__items">
+                    <li class="menu__block"><a href="#method" class="menu__link">О методе</a></li>
+                    <li class="menu__block"><a href="#reviews" class="menu__link">Отзывы</a></li>
+                    <li class="menu__block"><a href="#price" class="menu__link">Цена</a></li>
+                    <li class="menu__block"><a href="#about" class="menu__link">О нас</a></li>
+                    <li class="menu__block"><a href="#rooms" class="menu__link">Номера</a></li>
+                    <li class="menu__block"><a href="#courses" class="menu__link">Процедуры</a></li>
+                    <li class="menu__block"><a href="#action" class="menu__link">Акция</a></li>
+                    <li class="menu__block"><a href="#social" class="menu__link">Мы в сетях</a></li>
+                    <li class="menu__block menu__block--phone">+7 (918) 252-80-88</li>
+                    <li class="menu__block menu__block--phone">+7 (928) 210-02-17</li>
+                    <li class="menu__block menu__block--phone">+7 (861) 290-02-17</li>
+                </ul>
+            </nav>
         </div>
-        <nav class="menu menu--closed">
-            <button class="menu__toggle"></button>
-            <ul class="menu__items">
-                <li class="menu__block"><a href="#method" class="menu__link">О методе</a></li>
-                <li class="menu__block"><a href="#reviews" class="menu__link">Отзывы</a></li>
-                <li class="menu__block"><a href="#price" class="menu__link">Цена</a></li>
-                <li class="menu__block"><a href="#about" class="menu__link">О нас</a></li>
-                <li class="menu__block"><a href="#rooms" class="menu__link">Номера</a></li>
-                <li class="menu__block"><a href="#courses" class="menu__link">Процедуры</a></li>
-                <li class="menu__block"><a href="#action" class="menu__link">Акция</a></li>
-                <li class="menu__block"><a href="#social" class="menu__link">Мы в сетях</a></li>
-            </ul>
-        </nav>
     </header>
     
     <main>
         <section class="promo">
-            <h1 class="promo__h1">ЛЕЧЕБНОЕ ГОЛОДАНИЕ</h1>
-            <p class="promo__text"><span>ПОД НАБЛЮДЕНИЕМ</span> <strong>команды специалистов</strong> в предгорном эко-санатории "Березки" п.Псебай Краснодарский край</p>
-            <a href="" class="promo__link">СМОТРЕТЬ 3D-ТУР ПО САНАТОРИЮ</a>
+            <div class="promo__wrap">
+                <h1 class="promo__h1">ЛЕЧЕБНОЕ ГОЛОДАНИЕ</h1>
+                <p class="promo__text"><span>ПОД НАБЛЮДЕНИЕМ</span> <strong>команды специалистов</strong> в предгорном эко-санатории "Березки"</p>
+                <p class="promo__text">п.Псебай Краснодарский край</p>
+                <a href="" class="btn btn--promo promo__link">СМОТРЕТЬ 3D-ТУР ПО САНАТОРИЮ</a>
+            </div>
         </section>
         <section class="benefits">
             <p class="benefits__title">Вы получите</p>
@@ -44,35 +52,35 @@
                         <img src="img/circle-1.jpg" alt="Здоровье и очищение" class="benefits__img" width="217" height="217">
                     </div>
                     <h3 class="benefits__h3">Здоровье и очищение</h3>
-                    <benefits__text>Очищение организма от шлаков и токсинов</benefits__text>
+                    <p class="benefits__text">Очищение организма от шлаков и токсинов</p>
                 </li>
                 <li class="benefits__block">
                     <div class="benefits__img-wrap">
                         <img src="img/circle-2.jpg" alt="Походы и экскурсии" class="benefits__img" width="217" height="217">
                     </div>
                     <h3 class="benefits__h3">Походы и экскурсии</h3>
-                    <benefits__text>Оздоровительные прогулки в горы и на реку</benefits__text>
+                    <p class="benefits__text">Оздоровительные прогулки в горы и на реку</p>
                 </li>
                 <li class="benefits__block">
                     <div class="benefits__img-wrap">
                         <img src="img/circle-3.jpg" alt="Под наблюдением" class="benefits__img" width="217" height="217">
                     </div>
                     <h3 class="benefits__h3">под наблюдением специалистов</h3>
-                    <benefits__text>Под наблюдением опытной команды специалистов 24 ч. в сутки</benefits__text>
+                    <p class="benefits__text">Под наблюдением опытной команды специалистов<br>24 ч. в сутки</p>
                 </li>
                 <li class="benefits__block">
                     <div class="benefits__img-wrap">
                         <img src="img/circle-4.jpg" alt="ДИАГНОСТИКА" class="benefits__img" width="217" height="217">
                     </div>
                     <h3 class="benefits__h3">УНИКАЛЬНАЯ ДИАГНОСТИКА</h3>
-                    <benefits__text>Аппарат КСИ-диагностики - инновация, разработанная для МВД России, таких аппаратов всего три в стране, один в Санкт-Петербурге, второй в Москве и третий у нас.</benefits__text>
+                    <p class="benefits__text">Аппарат КСИ-диагностики - инновация, разработанная для МВД России, таких аппаратов всего три в стране, один в Санкт-Петербурге, второй в Москве и третий у нас.</p>
                 </li>
                 <li class="benefits__block">
                     <div class="benefits__img-wrap">
                         <img src="img/circle-5.jpg" alt="СНИЖЕНИЕ ВЕСА" class="benefits__img" width="217" height="217">
                     </div>
                     <h3 class="benefits__h3">СНИЖЕНИЕ ВЕСА</h3>
-                    <benefits__text>Снижение веса на 10 и более килограмм*<span>*Ваши результаты могут отличаться от заявленных</span></benefits__text>
+                    <p class="benefits__text">Снижение веса на 10 и более килограмм*<span>*Ваши результаты могут отличаться от заявленных</span></p>
                 </li>
             </ul>
             <a href="#video" class="benefits__link">СМОТРЕТЬ ВИДЕО О САНАТОРИИ</a>
@@ -617,91 +625,91 @@
                         <img src="img/course-1.jpg" alt="висцеральный массаж" class="benefits__img" width="217" height="217">
                     </div>
                     <h3 class="benefits__h3">висцеральный массаж</h3>
-                    <benefits__text>Черезвычайно полезный массаж внутренних органов, возвращающий молодость.</benefits__text>
+                    <p class="benefits__text">Черезвычайно полезный массаж внутренних органов, возвращающий молодость.</p>
                 </li>
                 <li class="benefits__block">
                     <div class="benefits__img-wrap">
                         <img src="img/course-2.jpg" alt="Русская спа-баня" class="benefits__img" width="217" height="217">
                     </div>
                     <h3 class="benefits__h3">Русская спа-баня</h3>
-                    <benefits__text>Наша банька - это экскурс в глубину, едва не утратившего в наше время смысл и традиции.</benefits__text>
+                    <p class="benefits__text">Наша банька - это экскурс в глубину, едва не утратившего в наше время смысл и традиции.</p>
                 </li>
                 <li class="benefits__block">
                     <div class="benefits__img-wrap">
                         <img src="img/course-3.jpg" alt="СПЕЛЕОТЕРАПИЯ" class="benefits__img" width="217" height="217">
                     </div>
                     <h3 class="benefits__h3">СПЕЛЕОТЕРАПИЯ</h3>
-                    <benefits__text>Соль образует особый микроклимат в комнате, который оказывает противовоспалительное действие и нормализует работу бронхов.</benefits__text>
+                    <p class="benefits__text">Соль образует особый микроклимат в комнате, который оказывает противовоспалительное действие и нормализует работу бронхов.</p>
                 </li>
                 <li class="benefits__block">
                     <div class="benefits__img-wrap">
                         <img src="img/course-4.jpg" alt="ГРЯЗЕЛЕЧЕНИЕ" class="benefits__img" width="217" height="217">
                     </div>
                     <h3 class="benefits__h3">ГРЯЗЕЛЕЧЕНИЕ</h3>
-                    <benefits__text>Лечебные ейские грязи славятся своим поистине многосторонним лечебным воздействием.</benefits__text>
+                    <p class="benefits__text">Лечебные ейские грязи славятся своим поистине многосторонним лечебным воздействием.</p>
                 </li>
                 <li class="benefits__block">
                     <div class="benefits__img-wrap">
                         <img src="img/course-5.jpg" alt="ГИДРОТЕРАПИЯ" class="benefits__img" width="217" height="217">
                     </div>
                     <h3 class="benefits__h3">ГИДРОТЕРАПИЯ</h3>
-                    <benefits__text>Вода благоприятно воздействует на организм в целом, улучшает кровообращение и укрепляет иммунитет!</benefits__text>
+                    <p class="benefits__text">Вода благоприятно воздействует на организм в целом, улучшает кровообращение и укрепляет иммунитет!</p>
                 </li>
                 <li class="benefits__block">
                     <div class="benefits__img-wrap">
                         <img src="img/course-6.jpg" alt="ГИРУДОТЕРАПИЯ" class="benefits__img" width="217" height="217">
                     </div>
                     <h3 class="benefits__h3">ГИРУДОТЕРАПИЯ</h3>
-                    <benefits__text>Пиявка — это уникальный лекарь!</benefits__text>
+                    <p class="benefits__text">Пиявка — это уникальный лекарь!</p>
                 </li>
                 <li class="benefits__block">
                     <div class="benefits__img-wrap">
                         <img src="img/course-7.jpg" alt="МОК" class="benefits__img" width="217" height="217">
                     </div>
                     <h3 class="benefits__h3">МОК</h3>
-                    <benefits__text>Эффект от процедуры заключается в том, что Вы похудеете и станете чувствовать себя очень легко!</benefits__text>
+                    <p class="benefits__text">Эффект от процедуры заключается в том, что Вы похудеете и станете чувствовать себя очень легко!</p>
                 </li>
                 <li class="benefits__block">
                     <div class="benefits__img-wrap">
                         <img src="img/course-8.jpg" alt="лечебный МАССАЖ" class="benefits__img" width="217" height="217">
                     </div>
                     <h3 class="benefits__h3">лечебный МАССАЖ</h3>
-                    <benefits__text>Массаж - классика санаторно-курортного лечения.</benefits__text>
+                    <p class="benefits__text">Массаж - классика санаторно-курортного лечения.</p>
                 </li>
                 <li class="benefits__block">
                     <div class="benefits__img-wrap">
                         <img src="img/course-9.jpg" alt="обертывание" class="benefits__img" width="217" height="217">
                     </div>
                     <h3 class="benefits__h3">обертывание</h3>
-                    <benefits__text>Замечательный способ очищения и общего оздоровления организма</benefits__text>
+                    <p class="benefits__text">Замечательный способ очищения и общего оздоровления организма</p>
                 </li>
                 <li class="benefits__block">
                     <div class="benefits__img-wrap">
                         <img src="img/course-10.jpg" alt="тюбаж" class="benefits__img" width="217" height="217">
                     </div>
                     <h3 class="benefits__h3">тюбаж</h3>
-                    <benefits__text>Тюбаж – это промывание и очищение печени.</benefits__text>
+                    <p class="benefits__text">Тюбаж – это промывание и очищение печени.</p>
                 </li>
                 <li class="benefits__block">
                     <div class="benefits__img-wrap">
                         <img src="img/course-11.jpg" alt="КСИ-ДИАГНОСТИКА" class="benefits__img" width="217" height="217">
                     </div>
                     <h3 class="benefits__h3">КСИ-ДИАГНОСТИКА</h3>
-                    <benefits__text>Инновационный диагностический аппарат, таких всего три в России. По одному в Москве и Санкт-Петербурге и один у нас!</benefits__text>
+                    <p class="benefits__text">Инновационный диагностический аппарат, таких всего три в России. По одному в Москве и Санкт-Петербурге и один у нас!</p>
                 </li>
                 <li class="benefits__block">
                     <div class="benefits__img-wrap">
                         <img src="img/course-12.jpg" alt="АРОМАТЕРАПИЯ" class="benefits__img" width="217" height="217">
                     </div>
                     <h3 class="benefits__h3">АРОМАТЕРАПИЯ</h3>
-                    <benefits__text>Исключительно натуральные составы, действительно жива косметика, без консервантов</benefits__text>
+                    <p class="benefits__text">Исключительно натуральные составы, действительно жива косметика, без консервантов</p>
                 </li>
                 <li class="benefits__block">
                     <div class="benefits__img-wrap">
                         <img src="img/course-13.jpg" alt="фито-паро-сауна" class="benefits__img" width="217" height="217">
                     </div>
                     <h3 class="benefits__h3">фито-паро-сауна</h3>
-                    <benefits__text>Кедровая мини-сауна – отличная профилактика заболеваний и мощный заряд бодрости!</benefits__text>
+                    <p class="benefits__text">Кедровая мини-сауна – отличная профилактика заболеваний и мощный заряд бодрости!</p>
                 </li>
             </ul>
             <a href="#video" class="benefits__link">Забронировать номер!</a>
@@ -795,7 +803,7 @@
             <div class="social__buttons">
                 <a href="#" class="social__btn social__btn--ok">Одноклассники</a>
                 <a href="#" class="social__btn social__btn--vk">ВКонтакте</a>
-                <a href="#" class="social__btn social__btn--fb">Фейсбуй</a>
+                <a href="#" class="social__btn social__btn--fb">Фейсбук</a>
                 <a href="#" class="social__btn social__btn--in">Инстаграмм</a>
             </div>
         </section>
@@ -836,6 +844,6 @@
     </footer>
     
     <script src="js/picturefill.min.js"></script>
-<!--    <script src="js/script.js"></script>-->
+    <script src="js/script.js"></script>
 </body>
 </html>

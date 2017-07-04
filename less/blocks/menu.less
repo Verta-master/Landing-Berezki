@@ -1,0 +1,71 @@
+.menu {
+    position: relative;
+}
+
+.menu--closed .menu__items {
+    display: none;
+}
+
+.menu__toggle {
+    margin-right: 14px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.menu--closed .menu__toggle {
+    background-image: url(../img/icon-ham.png);
+    width: 42px;
+    height: 32px;
+}
+
+.menu--opened .menu__toggle {
+    background-image: url(../img/icon-cross.png);
+    width: 35px;
+    height: 33px;
+}
+
+.menu--opened {
+    
+    .menu__items {
+        display: block;
+        position: absolute;
+        top: 55px;
+        right: 0;
+        width: 320px;
+        list-style-type: none;
+        background-color: @green;
+        padding: 0;
+        margin: 0;
+        z-index: 10;
+    }
+    
+    .menu__block {
+        border-bottom: 1px solid #fff;
+    }
+    
+    .menu__block:last-child {
+        border: none;
+    }
+    
+    .menu__link,
+    .menu__block--phone {
+        color: #fff;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 40px;
+        text-decoration: none;
+        padding-left: 12px;
+    }
+    
+    .menu__block--phone {
+        font-size: 26px;
+        font-weight: 700;
+        padding-left: 45px;
+        background-image: url(../../img/icon-phone.svg);
+        background-repeat: no-repeat;
+        background-position: left 15px center;        
+    }
+}
