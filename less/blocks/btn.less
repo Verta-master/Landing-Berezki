@@ -1,6 +1,7 @@
 .btn {
-    width: 100%;
+    max-width: 300px;
     min-height: 70px;
+    margin: 0 auto;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -12,7 +13,15 @@
     text-align: center;
     text-decoration: none;
     color: #fff;
+    border-radius: 50px;
+}
+
+.btn--red {
     background-color: @red;
     background-image: linear-gradient(to bottom, #cc5741, #b23f28);
-    border-radius: 50px;
+}
+
+.btn--green {
+    background-color: @green;
+    background-image: linear-gradient(to bottom, #75b473, #5c9b5b);
 }

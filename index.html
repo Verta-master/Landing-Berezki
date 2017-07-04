@@ -41,7 +41,7 @@
                 <h1 class="promo__h1">ЛЕЧЕБНОЕ ГОЛОДАНИЕ</h1>
                 <p class="promo__text"><span>ПОД НАБЛЮДЕНИЕМ</span> <strong>команды специалистов</strong> в предгорном эко-санатории "Березки"</p>
                 <p class="promo__text">п.Псебай Краснодарский край</p>
-                <a href="" class="btn btn--promo promo__link">СМОТРЕТЬ 3D-ТУР ПО САНАТОРИЮ</a>
+                <a href="" class="btn btn--red promo__link">СМОТРЕТЬ 3D-ТУР ПО САНАТОРИЮ</a>
             </div>
         </section>
         <section class="benefits">
@@ -83,35 +83,39 @@
                     <p class="benefits__text">Снижение веса на 10 и более килограмм*<span>*Ваши результаты могут отличаться от заявленных</span></p>
                 </li>
             </ul>
-            <a href="#video" class="benefits__link">СМОТРЕТЬ ВИДЕО О САНАТОРИИ</a>
+            <a href="#video" class="btn btn--green">СМОТРЕТЬ ВИДЕО О САНАТОРИИ</a>
         </section>
         <section class="help">
             <div class="help__wrap">
                 <p class="help__title">Помощь в подборе программы! </p>
                 <p class="help__text">оставьте заявку и наш менеджер поможет подобрать вам программу голодания</p>
-                <form action="" class="help__form">
-                    <input type="text" class="help__name" placeholder="Имя *" required>
-                    <input type="tel" class="help__phone" placeholder="Телефон *" required>
-                    <input type="text" class="help__code" placeholder="Промокод на скидку">
-                    <button class="help__btn">Получить рекомендацию!</button>
+                <form action="#" class="help__form" method="post">
+                    <input type="text" name="name" id="name" class="help__name" placeholder="Имя *" required>
+                    <input type="tel" name="phone" id="phone" class="help__phone" placeholder="Телефон *" required>
+                    <input type="text" name="code" id="code" class="help__code" placeholder="Промокод на скидку">
+                    <button type="submit" class="help__btn">Получить рекомендацию!</button>
                 </form>
                 <a href="" class="help__policy">Политика конфиденциальности</a>
             </div>
         </section>
         <section class="recept">
-            <h2 class="title-h2">Мы практикуем лечебное голодание</h2>
-            <p class="recept__text">по проверенной методике <span>Ю.С. Николаева</span> и по рецепту фитосбора <strong>М.В. Оганян</strong></p>
-            <img src="img/recept.jpg" alt="рецепт" class="recept__img" width="461" height="325">
-            <img src="img/circle-6.jpg" alt="пешие прогулки" class="recept__img" width="299" height="299">
-            <p class="recept__slogan">Лечебное голодание + пешие прогулки в горы и спа процедуры <strong>дают лучший эффект</strong></p>
+            <div class="recept__wrap">
+                <h2 class="title-h2">Мы практикуем лечебное голодание</h2>
+                <p class="recept__text">по проверенной методике <span>Ю.С. Николаева</span> и по рецепту фитосбора <strong>М.В. Оганян</strong></p>
+                <img src="img/recept.jpg" alt="рецепт" class="recept__img" width="461" height="325">
+                <img src="img/plus.svg" alt="плюс" class="recept__img" width="59" height="63">
+                <img src="img/circle-6.jpg" alt="пешие прогулки" class="recept__img" width="299" height="299">
+                <p class="recept__slogan">Лечебное голодание + пешие прогулки в горы<br>и спа процедуры <strong>дают лучший эффект</strong></p>
+            </div>
         </section>
         <section class="video">
-            <h2 class="title-h2"></h2>
-            <div class="video__block"></div>
-            <picture>
-                <source media="(min-width: 960px)" srcset="img/video.jpg">
-                <img src="img/video-mobile.jpg" srcset="img/video-mobile.jpg" alt="Лечебное голодание" width="300" height="170">
-            </picture>
+            <div class="video__block">
+                <h2 class="title-h2">Ролик об истории метода лечебного голодания</h2>
+                <picture>
+                    <source media="(min-width: 960px)" srcset="img/video.jpg">
+                    <img src="img/video-mobile.jpg" srcset="img/video-mobile.jpg" alt="Лечебное голодание" width="300" height="170">
+                </picture>
+            </div>
         </section>
         <section class="indication">
             <h3 class="title-h3">Показания к лечебному голоданию:</h3>
@@ -241,10 +245,10 @@
                 <p class="help__title">Экономьте сегодня!</p>
                 <p class="help__text">оставьте заявку сегодня и получите скидку на проживание в номере <span>-20%</span></p>
                 <form action="" class="help__form">
-                    <input type="text" class="help__name" placeholder="Имя *" required>
-                    <input type="tel" class="help__phone" placeholder="Телефон *" required>
-                    <input type="text" class="help__code" placeholder="Промокод на скидку">
-                    <button class="help__btn">Забронировать!</button>
+                    <input type="text" name="name" id="name" class="help__name" placeholder="Имя *" required>
+                    <input type="tel" name="phone" id="phone" class="help__phone" placeholder="Телефон *" required>
+                    <input type="text" name="code" id="code" class="help__code" placeholder="Промокод на скидку">
+                    <button type="submit" class="help__btn">Получить рекомендацию!</button>
                 </form>
                 <a href="" class="help__policy">Политика конфиденциальности</a>
             </div>            
@@ -469,10 +473,10 @@
                 <p class="help__title">Экономьте сегодня!</p>
                 <p class="help__text">оставьте заявку сегодня и получите скидку на проживание в номере <span>-20%</span></p>
                 <form action="" class="help__form">
-                    <input type="text" class="help__name" placeholder="Имя *" required>
-                    <input type="tel" class="help__phone" placeholder="Телефон *" required>
-                    <input type="text" class="help__code" placeholder="Промокод на скидку">
-                    <button class="help__btn">Забронировать!</button>
+                    <input type="text" name="name" id="name" class="help__name" placeholder="Имя *" required>
+                    <input type="tel" name="phone" id="phone" class="help__phone" placeholder="Телефон *" required>
+                    <input type="text" name="code" id="code" class="help__code" placeholder="Промокод на скидку">
+                    <button type="submit" class="help__btn">Получить рекомендацию!</button>
                 </form>
                 <a href="" class="help__policy">Политика конфиденциальности</a>
             </div>            
@@ -608,10 +612,10 @@
                 <p class="help__title">Экономьте сегодня!</p>
                 <p class="help__text">оставьте заявку сегодня и получите скидку на проживание в номере <span>-20%</span></p>
                 <form action="" class="help__form">
-                    <input type="text" class="help__name" placeholder="Имя *" required>
-                    <input type="tel" class="help__phone" placeholder="Телефон *" required>
-                    <input type="text" class="help__code" placeholder="Промокод на скидку">
-                    <button class="help__btn">Забронировать!</button>
+                    <input type="text" name="name" id="name" class="help__name" placeholder="Имя *" required>
+                    <input type="tel" name="phone" id="phone" class="help__phone" placeholder="Телефон *" required>
+                    <input type="text" name="code" id="code" class="help__code" placeholder="Промокод на скидку">
+                    <button type="submit" class="help__btn">Получить рекомендацию!</button>
                 </form>
                 <a href="" class="help__policy">Политика конфиденциальности</a>
             </div>            
@@ -789,10 +793,10 @@
                 <p class="help__title">Экономьте сегодня!</p>
                 <p class="help__text">оставьте заявку сегодня и получите скидку на проживание в номере <span>-20%</span></p>
                 <form action="" class="help__form">
-                    <input type="text" class="help__name" placeholder="Имя *" required>
-                    <input type="tel" class="help__phone" placeholder="Телефон *" required>
-                    <input type="text" class="help__code" placeholder="Промокод на скидку">
-                    <button class="help__btn">Забронировать!</button>
+                    <input type="text" name="name" id="name" class="help__name" placeholder="Имя *" required>
+                    <input type="tel" name="phone" id="phone" class="help__phone" placeholder="Телефон *" required>
+                    <input type="text" name="code" id="code" class="help__code" placeholder="Промокод на скидку">
+                    <button type="submit" class="help__btn">Получить рекомендацию!</button>
                 </form>
                 <a href="" class="help__policy">Политика конфиденциальности</a>
             </div>            
