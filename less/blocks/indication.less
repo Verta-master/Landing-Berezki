@@ -1,0 +1,78 @@
+.indication {
+    background-image: url(../img/grass.png);
+    background-position: bottom;
+    background-repeat: repeat-x;
+    padding-bottom: 125px;
+}
+
+.indication__bg {
+    width: 300px;
+    background-color: @red;
+    padding: 10px;
+    
+    &--orange {
+        background-color: #dfad33;
+        color: #243146;
+    }
+}
+
+.indication__wrap {
+    width: 320px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    
+    &--bg {
+        background-color: #f4f4f6;
+    }
+}
+
+.indication__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.indication__item {
+    font-size: 18px;
+    line-height: 26px;
+    padding-left: 40px;
+    margin-bottom: 14px;
+    position: relative;
+}
+
+.indication__item--con::before,
+.indication__item--pro::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../img/smile-red.png);
+    background-repeat: no-repeat;
+    width: 33px;
+    height: 33px;
+}
+
+.indication__item--pro::before {
+    background-image: url(../img/smile.png);
+}
+
+.indication__img {
+    margin: 0 auto;
+}
+
+.indication__comment {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.indication__btn {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 28px;
+    line-height: 28px;
+    text-transform: none;
+}
