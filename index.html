@@ -1,15 +1,253 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta  name="viewport" content="width=device-width,initial-scale=1">
-    <title>Corporate Langing Page</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic">
+    <title>Березки - лечебное голодание</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+    <header class="header-main">
+        <div class="user-block">
+            <img src="img/logo.png" alt="Логотип" class="logo" width="105" height="40">
+            <div class="user-block__phone">+7 (918) 252-80-88</div>
+            <div class="user-block__phone">+7 (928) 210-02-17</div>
+            <div class="user-block__phone">+7 (861) 290-02-17</div>
+        </div>
+        <nav class="menu menu--closed">
+            <button class="menu__toggle"></button>
+            <ul class="menu__items">
+                <li class="menu__block"><a href="#method" class="menu__link">О методе</a></li>
+                <li class="menu__block"><a href="#reviews" class="menu__link">Отзывы</a></li>
+                <li class="menu__block"><a href="#price" class="menu__link">Цена</a></li>
+                <li class="menu__block"><a href="#about" class="menu__link">О нас</a></li>
+                <li class="menu__block"><a href="#rooms" class="menu__link">Номера</a></li>
+                <li class="menu__block"><a href="#courses" class="menu__link">Процедуры</a></li>
+                <li class="menu__block"><a href="#action" class="menu__link">Акция</a></li>
+                <li class="menu__block"><a href="#social" class="menu__link">Мы в сетях</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="promo">
+            <h1 class="promo__h1">ЛЕЧЕБНОЕ ГОЛОДАНИЕ</h1>
+            <p class="promo__text"><span>ПОД НАБЛЮДЕНИЕМ</span> <strong>команды специалистов</strong> в предгорном эко-санатории "Березки" п.Псебай Краснодарский край</p>
+            <a href="" class="promo__link">СМОТРЕТЬ 3D-ТУР ПО САНАТОРИЮ</a>
+        </section>
+        <section class="benefits">
+            <p class="benefits__title">Вы получите</p>
+            <ul class="benefits__items">
+                <li class="benefits__block">
+                    <div class="benefits__img-wrap">
+                        <img src="img/circle-1.jpg" alt="Здоровье и очищение" class="benefits__img" width="217" height="217">
+                    </div>
+                    <h3 class="benefits__h3">Здоровье и очищение</h3>
+                    <benefits__text>Очищение организма от шлаков и токсинов</benefits__text>
+                </li>
+                <li class="benefits__block">
+                    <div class="benefits__img-wrap">
+                        <img src="img/circle-2.jpg" alt="Походы и экскурсии" class="benefits__img" width="217" height="217">
+                    </div>
+                    <h3 class="benefits__h3">Походы и экскурсии</h3>
+                    <benefits__text>Оздоровительные прогулки в горы и на реку</benefits__text>
+                </li>
+                <li class="benefits__block">
+                    <div class="benefits__img-wrap">
+                        <img src="img/circle-3.jpg" alt="Под наблюдением" class="benefits__img" width="217" height="217">
+                    </div>
+                    <h3 class="benefits__h3">под наблюдением специалистов</h3>
+                    <benefits__text>Под наблюдением опытной команды специалистов 24 ч. в сутки</benefits__text>
+                </li>
+                <li class="benefits__block">
+                    <div class="benefits__img-wrap">
+                        <img src="img/circle-4.jpg" alt="ДИАГНОСТИКА" class="benefits__img" width="217" height="217">
+                    </div>
+                    <h3 class="benefits__h3">УНИКАЛЬНАЯ ДИАГНОСТИКА</h3>
+                    <benefits__text>Аппарат КСИ-диагностики - инновация, разработанная для МВД России, таких аппаратов всего три в стране, один в Санкт-Петербурге, второй в Москве и третий у нас.</benefits__text>
+                </li>
+                <li class="benefits__block">
+                    <div class="benefits__img-wrap">
+                        <img src="img/circle-5.jpg" alt="СНИЖЕНИЕ ВЕСА" class="benefits__img" width="217" height="217">
+                    </div>
+                    <h3 class="benefits__h3">СНИЖЕНИЕ ВЕСА</h3>
+                    <benefits__text>Снижение веса на 10 и более килограмм*<span>*Ваши результаты могут отличаться от заявленных</span></benefits__text>
+                </li>
+            </ul>
+            <a href="#video" class="benefits__link">СМОТРЕТЬ ВИДЕО О САНАТОРИИ</a>
+        </section>
+        <section class="help">
+            <div class="help__wrap">
+                <p class="help__title">Помощь в подборе программы! </p>
+                <p class="help__text">оставьте заявку и наш менеджер поможет подобрать вам программу голодания</p>
+                <form action="" class="help__form">
+                    <input type="text" class="help__name" placeholder="Имя *" required>
+                    <input type="tel" class="help__phone" placeholder="Телефон *" required>
+                    <input type="text" class="help__code" placeholder="Промокод на скидку">
+                    <button class="help__btn">Получить рекомендацию!</button>
+                </form>
+                <a href="" class="help__policy">Политика конфиденциальности</a>
+            </div>
+        </section>
+        <section class="recept">
+            <h2 class="title-h2">Мы практикуем лечебное голодание</h2>
+            <p class="recept__text">по проверенной методике <span>Ю.С. Николаева</span> и по рецепту фитосбора <strong>М.В. Оганян</strong></p>
+            <img src="img/recept.jpg" alt="рецепт" class="recept__img" width="461" height="325">
+            <img src="img/circle-6.jpg" alt="пешие прогулки" class="recept__img" width="299" height="299">
+            <p class="recept__slogan">Лечебное голодание + пешие прогулки в горы и спа процедуры <strong>дают лучший эффект</strong></p>
+        </section>
+        <section class="video">
+            <h2 class="title-h2"></h2>
+            <div class="video__block"></div>
+            <picture>
+                <source media="(min-width: 960px)" srcset="img/video.jpg">
+                <img src="img/video-mobile.jpg" srcset="img/video-mobile.jpg" alt="Лечебное голодание" width="300" height="170">
+            </picture>
+        </section>
+        <section class="indication">
+            <h3 class="title-h3">Показания к лечебному голоданию:</h3>
+            <ul class="indication__list">
+                <li class="indication__item indication__item--con">Зашлакованность организма</li>
+                <li class="indication__item indication__item--con">Паразиты</li>
+                <li class="indication__item indication__item--con">Нарушение обмена веществ</li>
+                <li class="indication__item indication__item--con">Заболевания эндокринной системы</li>
+                <li class="indication__item indication__item--con">Одышка</li>
+                <li class="indication__item indication__item--con">Лишний вес</li>
+                <li class="indication__item indication__item--con">Регулярный стресс и нервное напряжение</li>
+            </ul>
+            <p class="indication__text">После полного курса голодания Вы:</p>
+            <ul class="indication__list">
+                <li class="indication__item indication__item--pro">Избавитесь от шлаков и токсинов<sup>1</sup></li>
+                <li class="indication__item indication__item--pro">Перезапустите свой метаболизм<sup>2</sup></li>
+                <li class="indication__item indication__item--pro">Получите эффект омоложения на клеточном уровне<sup>3</sup></li>
+                <li class="indication__item indication__item--pro">Восстановите обмен веществ и работу эндокринной системы<sup>4</sup></li>
+                <li class="indication__item indication__item--pro">Укрепите иммунитет за счет скрытых сил организма<sup>6</sup></li>
+                <li class="indication__item indication__item--pro">Подтянете кожу<sup>7</sup></li>
+                <li class="indication__item indication__item--pro">И, конечно, снизите вес на 10% - 25%!<sup>7</sup></li>
+            </ul>
+            <p class="indication__comment">1,2,3,4,5,6,7 - Ваши результаты могут отличаться от заявленных</p>
+            <button class="indication__btn">Получить консультацию</button>
+        </section>
+        <section class="reviews">
+            <h2 class="title-h2">Отзывы наших гостей</h2>
+            <p class="reviews__title">о лечебном голодании</p>
+            <ul class="reviews__list">
+                <li class="reviews__item">
+                    <img src="img/response-1.jpg" alt="Отзыв" class="reviews__img" width="151" height="151">
+                    <div class="reviews__block">
+                        <p class="reviews__name">Владимир. Курс голодания по методике Ю.Николаева - 7 дней</p>
+                        <p class="reviews__text">Я попробовал голодание в Березках, начал с 7ми дней. Для меня это было проверкой на силу воли. Я часто хожу в горы, часто - зимой. Сила воли там очень нужна. В общем, перед погружением в голодания боялся, что сорвусь. Да и врачи начали в один голос - для Вашего желудка это вредно!! Но я решился. Заодно вел дневник ощущений. Ощущений была масса. И приятных и не очень. Однако я выдержал. Сила воли укрепилась, а заодно укрепился и иммунитет, что конечно мне сильно помогло - я уже совсем скоро снова отправился покорять горы. На этот раз в Абхазии.*</p>
+                        <p class="reviews__comment">*Ваши результаты могут отличаться от заявленных.</p>
+                    </div>
+                </li>
+                <li class="reviews__item">
+                    <img src="img/response-2.jpg" alt="Отзыв" class="reviews__img" width="151" height="151">
+                    <div class="reviews__block">
+                        <p class="reviews__name">Анна. Курс голодания по рецепту фитосбора М.Оганян - 14 дней</p>
+                        <p class="reviews__text">Последние несколько лет я часто слышала и читала о том, как голодание вылечивает многие заболевания. И конечно думала, что раз мне врачи с моей аллергией не рекомендовали голодать, то и нечего про это думать. Однако, получилось до крайности забавно, когда приехав в Березки вместе с подругой, я с ней за компанию можно сказать "села" на недельное голодание. Дело было летом, развлечений хватало - одни экскурсии чего стоили! Так что я не заметила нескольких дней без еды… Были соки, были травяные сборы, были эмоции от горных пейзажей. Кругом такие аллергичные для меня растения и… ни одной попытки моего организма на них среагировать! Аллергии не случилось ни во время голодания, ни после него еще какое время. Теперь я регулярно голодаю и часто - в Березках.*</p>
+                        <p class="reviews__comment">*Ваши результаты могут отличаться от заявленных.</p>
+                    </div>                    
+                </li>
+                <li class="reviews__item">
+                    <img src="img/response-3.jpg" alt="Отзыв" class="reviews__img" width="151" height="151">
+                    <div class="reviews__block">
+                        <p class="reviews__name">Наталья. Курс голодания по рецепту фитосбора М.Оганян - 21 день</p>
+                        <p class="reviews__text">Голодание для меня было альтернативой диетам, на которых я сидела не раз. Диеты помогали, конечно, но ненадолго. Приехала в Санаторий "Березки" для прохождения спа-курса, и мне порекомендовали голодание. Я решила попробовать. 21 день - это острые, но надо признаться приятные ощущения. И результат - на лицо! Точнее, на лице. Да и на всем теле. Сбросила килограммы, кожа заметно почистилась. Даже казалось, что мысли стали чище. И спокойствие! Для меня, как для жителя мегаполиса, спокойствие - это ценное приобретение!*</p>
+                        <p class="reviews__comment">*Ваши результаты могут отличаться от заявленных.</p>
+                    </div>                    
+                </li>
+            </ul>
+            <a href="#" class="review__link">Забронировать номер!</a>
+        </section>
+        <section class="specialization">
+            <h2 class="specialization__h2"><span>ОСНОВНАЯ СПЕЦИАЛИЗАЦИЯ САНАТОРИЯ «БЕРЁЗКИ» –</span> ЛЕЧЕБНОЕ ГОЛОДАНИЕ, ОЧИЩЕНИЕ И КОМПЛЕКСНОЕ ОЗДОРОВЛЕНИЕ ОРГАНИЗМА</h2>
+            <p class="specialization__text"><span>«БЕРЁЗКИ»</span> – ЭТО ТЕСНОЕ ПЕРЕПЛЕТЕНИЕ ПРИРОДНОЙ МЕДИЦИНЫ И СОВРЕМЕННЫХ ТЕХНОЛОГИЙ</p>
+        </section>
+        <section class="specialists">
+            <p class="specialists__title">У нас есть все для эффективного и правильного питания</p>
+            <ul class="specialists__list">
+                <li class="specialists__person">
+                    <img src="img/photo-1.jpg" alt="Фото" class="specialists__photo" width="267" height="354">
+                    <p class="specialists__name">Врач-психотерапевт, мануальный терапевт</p>
+                </li>
+                <li class="specialists__person">
+                    <img src="img/photo-2.jpg" alt="Фото" class="specialists__photo" width="267" height="354">
+                    <p class="specialists__name">Специалист по КСИ-диагностике</p>                    
+                </li>
+                <li class="specialists__person">
+                    <img src="img/photo-3.jpg" alt="Фото" class="specialists__photo" width="267" height="354">
+                    <p class="specialists__name">Инструктор по походам, туризму</p>                    
+                </li>
+                <li class="specialists__person">
+                    <img src="img/photo-4.jpg" alt="Фото" class="specialists__photo" width="267" height="354">
+                    <p class="specialists__name">Специалист по ЛФК</p>                    
+                </li>
+                <li class="specialists__person">
+                    <img src="img/photo-5.jpg" alt="Фото" class="specialists__photo" width="267" height="354">
+                    <p class="specialists__name">Повар по РДТ</p>                    
+                </li>
+                <li class="specialists__person">
+                    <img src="img/photo-6.jpg" alt="Фото" class="specialists__photo" width="267" height="354">
+                    <p class="specialists__name">Висцеральный терапевт</p>                    
+                </li>
+            </ul>
+        </section>
+        <section class="additions">
+            <p class="additions__title">Для достижения максимально положительного эффекта от голодания вы получаете дополнительно:</p>
+            <ul class="additions__list">
+                <li class="additions__item">Многолетний опыт команды врачей, работающий на вас</li>
+                <li class="additions__item">Забота и внимание персонала, заботатерапия</li>
+                <li class="additions__item">Атмосфера покоя и умиротворения, душевное равновесие</li>
+                <li class="additions__item">Чистейший воздух кавказкого заповедника</li>
+                <li class="additions__item">Чистый воздух, вода и природа вокруг вас 24/7</li>
+                <li class="additions__item">Позитивное впечатление от окружения, компания единомышленников</li>
+                <li class="additions__item">Постоянная диагностика и сопровождение</li>
+                <li class="additions__item">Термальные источники и бальнеолечение</li>
+            </ul>
+        </section>
+        <section class="timer">
+            <div class="timer__count">
+                <p class="timer__title">Только сегодня! Скидка -20%</p>
+                <p class="timer__text">до конца акции:</p>
+                <div class="timer__digits">
+                    <div class="timer__block">
+                        <p class="timer__number">00</p>
+                        <p class="timer__descr">дней</p>
+                    </div>
+                    <div class="timer__block">
+                        <p class="timer__number">07</p>
+                        <p class="timer__descr">часов</p>
+                    </div>
+                    <div class="timer__block">
+                        <p class="timer__number">14</p>
+                        <p class="timer__descr">минут</p>
+                    </div>
+                    <div class="timer__block">
+                        <p class="timer__number">54</p>
+                        <p class="timer__descr">секунд</p>
+                    </div>
+                </div>
+            </div>
+            <div class="help__wrap help__wrap--timer">
+                <p class="help__title">Экономьте сегодня!</p>
+                <p class="help__text">оставьте заявку сегодня и получите скидку на проживание в номере <span>-20%</span></p>
+                <form action="" class="help__form">
+                    <input type="text" class="help__name" placeholder="Имя *" required>
+                    <input type="tel" class="help__phone" placeholder="Телефон *" required>
+                    <input type="text" class="help__code" placeholder="Промокод на скидку">
+                    <button class="help__btn">Забронировать!</button>
+                </form>
+                <a href="" class="help__policy">Политика конфиденциальности</a>
+            </div>            
+        </section>
+    </main>
+    
+    <footer class="footer-main">
+        
+    </footer>
     
     <script src="js/picturefill.min.js"></script>
-    <script src="js/script.js"></script>
+<!--    <script src="js/script.js"></script>-->
 </body>
 </html>
