@@ -9,6 +9,15 @@ img {
   max-width: 100%;
   height: auto;
 }
+.header-main,
+main,
+.footer-main,
+section {
+  width: 100%;
+}
+picture img {
+  vertical-align: middle;
+}
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -374,4 +383,221 @@ textarea {
   /* 1 */
   font: inherit;
   /* 2 */
+}
+.user-block .user-block__phone {
+  display: none;
+}
+.menu {
+  position: relative;
+}
+.menu--closed .menu__items {
+  display: none;
+}
+.menu__toggle {
+  margin-right: 14px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.menu--closed .menu__toggle {
+  background-image: url(../img/icon-ham.png);
+  width: 42px;
+  height: 32px;
+}
+.menu--opened .menu__toggle {
+  background-image: url(../img/icon-cross.png);
+  width: 35px;
+  height: 33px;
+}
+.menu--opened .menu__items {
+  display: block;
+  position: absolute;
+  top: 55px;
+  right: 0;
+  width: 320px;
+  list-style-type: none;
+  background-color: #31aa67;
+  padding: 0;
+  margin: 0;
+  z-index: 10;
+}
+.menu--opened .menu__block {
+  border-bottom: 1px solid #fff;
+}
+.menu--opened .menu__block:last-child {
+  border: none;
+}
+.menu--opened .menu__link,
+.menu--opened .menu__block--phone {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 40px;
+  text-decoration: none;
+  padding-left: 12px;
+}
+.menu--opened .menu__block--phone {
+  font-size: 26px;
+  font-weight: 700;
+  padding-left: 45px;
+  background-image: url(../../img/icon-phone.svg);
+  background-repeat: no-repeat;
+  background-position: left 15px center;
+}
+.logo {
+  margin-top: 7px;
+  margin-bottom: 12px;
+  margin-left: 17px;
+}
+.header-main__wrap {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 320px;
+  margin: 0 auto;
+  border-bottom: 11px solid #31aa67;
+}
+.promo {
+  background-image: url(../../img/screen-1-mobile.jpg);
+  background-size: cover;
+}
+.promo__wrap {
+  width: 320px;
+  min-height: 562px;
+  padding: 10px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.promo__h1 {
+  font-size: 43px;
+  line-height: 45px;
+  text-align: center;
+}
+.promo__text {
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  margin-top: 0;
+}
+.promo__text span {
+  font-size: 23px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #31aa67;
+}
+.promo__text strong {
+  display: block;
+  font-size: 23px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+.btn {
+  width: 100%;
+  min-height: 70px;
+  box-sizing: border-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 23px;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #de4d33;
+  background-image: linear-gradient(to bottom, #cc5741, #b23f28);
+  border-radius: 50px;
+}
+.benefits__title {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+}
+.benefits__items {
+  list-style-type: none;
+  padding: 10px;
+  margin: 0 auto;
+  width: 320px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.benefits__block {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.benefits__img-wrap {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 255px;
+  height: 255px;
+  border-radius: 50%;
+  border: 5px solid #c2ccdb;
+}
+.benefits__img {
+  border-radius: 50%;
+  border: 3px solid #8599b7;
+}
+.benefits__h3 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.benefits__text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+.benefits__text span {
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 5px;
+}
+.benefits__block:nth-child(4) .benefits__text {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+.benefits__block:nth-child(5) .benefits__text {
+  padding-left: 65px;
+  padding-right: 65px;
 }
