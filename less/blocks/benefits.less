@@ -109,6 +109,10 @@
         background-size: cover;
         padding-top: 20px;
         padding-bottom: 120px;
+        
+        &--pad {
+            padding-bottom: 80px;
+        }
     }
     
     .benefits__items {
@@ -135,7 +139,19 @@
         &::before {
             left: -405px;
             transform: scale(-1, 1); 
-        }        
+        }
+        
+        &--leaves {
+            margin-bottom: 40px;
+        }
+        
+        &--leaves::before {
+            top: 1350px;
+        }
+            
+        &--leaves::after {
+            top: 1350px;
+        }
     }
     
     .benefits__block {
@@ -146,6 +162,9 @@
     .benefits__btn {
         margin-left: auto;
         margin-right: auto;
+        text-transform: none;
+        font-size: 32px;
+        height: 100px;
     }
     
     .benefits__title {

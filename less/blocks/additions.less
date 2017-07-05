@@ -144,17 +144,24 @@
     .additions {
         background-image: url(../img/screen-6.jpg);
         background-size: cover;
+        padding-top: 50px;
     }
     
     .additions__title {
         max-width: 960px;
         font-size: 32px;
         line-height: 36px;
-        margin-bottom: 60px;
+        margin-bottom: 70px;
+        
+        &--plus {
+            font-size: 40px;
+            margin-bottom: 60px;
+        }
     }
     
     .additions__list {
         width: 960px;
+        padding-bottom: 30px;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -167,12 +174,17 @@
         flex-grow: 1;
         padding-top: 0;
         padding-left: 110px;
+        margin-bottom: 15px;
         box-sizing: border-box;
         text-align: left;
         
         &::before {
-            top: -30px;
-            left: 50px;
+            top: -10px;
+            left: 40px;
+        }
+        
+        span {
+            padding-left: 0;
         }
     }
 }

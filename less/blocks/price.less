@@ -7,6 +7,7 @@
 @media @desktop {
     .price {
         display: block;
+        padding-top: 35px;
     }
     
     .price__title {
@@ -24,6 +25,7 @@
         width: 960px;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 25px;
     }
     
     .price__anonce {
@@ -54,6 +56,24 @@
         border: 1px solid #d7e3f2;
         width: 960px;
         margin: 0 auto;
+        position: relative;
+        
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 210px;
+            right: -360px;
+            width: 195px;
+            height: 266px;
+            background-image: url(../img/leaves.png);
+            background-repeat: no-repeat;
+        }
+        
+        &::before {
+            left: -405px;
+            transform: scale(-1, 1); 
+        }        
     }
     
     .price__bg {
@@ -123,7 +143,7 @@
         display: flex;
         justify-content: flex-end;
         width: 960px;
-        margin: 20px auto;
+        margin: 40px auto 20px auto;
     }
     
     .price__link {
@@ -131,6 +151,7 @@
         margin-right: 40px;
         margin-left: 40px;
         text-transform: none;
+        height: 60px;
     }
     
     .price__comment {

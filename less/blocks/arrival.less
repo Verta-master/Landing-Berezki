@@ -37,11 +37,13 @@
         width: 960px;
         display: flex;
         padding-top: 60px;
+        position: relative;
     }
     
     .arrival__h2 {
         font-size: 36px;
         text-align: left;
+        margin-bottom: 45px;
     }
     
     .arrival__subtitle {
@@ -51,15 +53,23 @@
     
     .arrival__text {
         font-size: 18px;
+        margin-bottom: 25px;
+        
+        &:last-of-type {
+            padding-right: 100px;
+        }
     }
     
     .arrival__block {
-        padding-bottom: 60px;
+        padding-bottom: 50px;
         max-width: 640px;
     }
     
     .arrival__img {
-        width: 320px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 450px;
         height: auto;
     }
 }

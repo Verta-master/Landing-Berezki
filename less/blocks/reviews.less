@@ -110,14 +110,14 @@
         flex-direction: column;
         width: 100%;
         background-color: transparent;
+        margin-bottom: 20px;
         position: relative;
         
-        &::before,
-        &::after {
+        &::before {
             content: "";
             position: absolute;
-            top: 0;
-            left: -405px;
+            top: -120px;
+            left: -455px;
             width: 182px;
             height: 161px;
             background-image: url(../img/butterfly.png);
@@ -125,7 +125,14 @@
         }
         
         &::after {
-            right: -360px;
+            content: "";
+            position: absolute;
+            top: -80px;
+            right: -400px;
+            width: 182px;
+            height: 161px;
+            background-image: url(../img/butterfly.png);
+            background-repeat: no-repeat;
             transform: scale(-1, 1); 
         }        
     }
@@ -178,4 +185,15 @@
     .reviews__comment {
         margin-bottom: 10px;
     }
+    
+    .reviews__item:nth-child(2) .reviews__comment,
+    .reviews__item:nth-child(3) .reviews__comment{
+        margin-bottom: 20px;
+    }
+    
+    .reviews__item:nth-child(2) .reviews__text {
+        line-height: 23px;
+        margin-bottom: 25px;
+    }
+
 }
