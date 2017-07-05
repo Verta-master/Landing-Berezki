@@ -15,3 +15,30 @@
     text-decoration: none;
     color: #000;
 }
+
+//----------------DESKTOP---------------
+
+@media @desktop {
+    .user-block {
+        width: 960px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        min-height: 75px;
+        
+        .user-block__phone {
+            display: block;
+            font-size: 26px;
+            line-height: 36px;
+            font-weight: 700;
+            width: 33%;
+            text-align: center;
+            padding-top: 20px;
+            
+            &:hover {
+                background-color: #ebedfa;
+            }
+        }
+    }
+}

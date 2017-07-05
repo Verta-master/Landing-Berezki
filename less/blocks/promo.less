@@ -46,3 +46,60 @@
         margin-bottom: 15px;
     }
 }
+
+//----------------DESKTOP---------------
+
+@media @desktop {
+    .promo {
+        background-image: url(../img/promo-desktop.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .promo__wrap {
+        width: 960px;
+        margin: 0 auto;
+        min-height: 556px;
+        align-items: flex-start;
+        position: relative;
+        
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -24px;
+            left: 50%;
+            transform: translateX(-49px);
+            background-image: url(../../img/shape-central.png);
+            background-repeat: no-repeat;
+            width: 98px;
+            height: 25px;
+        }
+    }
+    
+    .promo__h1 {
+        max-width: 600px;
+        width: 600px;
+        font-size: 50px;
+        font-weight: 700;
+        text-align: left;
+        margin-left: 0;
+    }
+    
+    .promo__text {
+        width: 600px;
+        max-width: 600px;
+        text-align: left;
+        font-size: 32px;
+        
+        span {
+            font-size: 32px;
+            line-height: 24px;
+        }
+        
+        strong {
+            display: inline-block;
+            vertical-align: baseline;
+        }
+    }
+}

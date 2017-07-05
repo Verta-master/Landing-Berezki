@@ -69,3 +69,36 @@
         background-position: left 15px center;        
     }
 }
+
+//----------------DESKTOP---------------
+
+@media @desktop {
+    .menu {
+        background-color: @green;
+    }
+    
+    .menu__toggle {
+        display: none;
+    }
+    
+    .menu--closed .menu__items {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        margin: 0 auto;
+        padding: 0 17px;
+        width: 960px;
+        box-sizing: border-box;
+    }
+    
+    .menu__block--phone {
+        display: none;
+    }
+    
+    .menu__link {
+        color: #fff;
+        text-decoration: none;
+        font-size: 22px;
+        line-height: 36px;
+    }
+}
