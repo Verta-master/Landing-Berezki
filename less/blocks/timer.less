@@ -109,5 +109,20 @@
         justify-content: space-around;
         align-items: center;
         padding-top: 50px;
+        background-image: url(../img/screen-7-trees.jpg);
+        background-size: cover;
+        background-position: center;
+        
+        &--mobile {
+            flex-direction: row;
+            
+            .help__wrap--timer {
+                order: 1;
+            }
+
+            .timer__count {
+                order: 2;
+            }
+        }
     }
 }
