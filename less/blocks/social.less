@@ -58,10 +58,6 @@
 @media @desktop {
     .social {
         padding-top: 50px;
-        background-image: url(../img/hands.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: bottom;
     }
     
     .social__wrap {
@@ -80,5 +76,32 @@
         height: 95px;
         border-radius: 10px;
         margin-right: 18px;
+    }
+    
+    .social__buttons {
+        position: relative;
+        
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: -95px;
+            left: -270px;
+            background-image: url(../../img/hands.jpg);
+            background-repeat: no-repeat;
+            width: 295px;
+            height: 339px;
+        }
+        
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -95px;
+            right: -270px;
+            background-image: url(../../img/hands.jpg);
+            background-repeat: no-repeat;
+            width: 295px;
+            height: 339px;
+            transform: scale(-1, 1);
+        }
     }
 }
