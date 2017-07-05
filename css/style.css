@@ -1777,3 +1777,142 @@ textarea {
 .footer-main .logo {
   margin-left: 0;
 }
+@media (min-width: 960px) {
+  .user-block {
+    width: 960px;
+    margin: 0 auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: stretch;
+        align-items: stretch;
+    min-height: 75px;
+  }
+  .user-block .user-block__phone {
+    display: block;
+    font-size: 26px;
+    line-height: 36px;
+    font-weight: 700;
+    width: 33%;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .user-block .user-block__phone:hover {
+    background-color: #ebedfa;
+  }
+  .menu {
+    background-color: #31aa67;
+  }
+  .menu__toggle {
+    display: none;
+  }
+  .menu--closed .menu__items {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0 17px;
+    width: 960px;
+    box-sizing: border-box;
+  }
+  .menu__block--phone {
+    display: none;
+  }
+  .menu__link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+    line-height: 36px;
+  }
+  .header-main__wrap {
+    display: block;
+    width: 100%;
+    border-bottom: none;
+  }
+  .promo {
+    background-image: url(../img/promo-desktop.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .promo__wrap {
+    width: 960px;
+    margin: 0 auto;
+    min-height: 556px;
+    -ms-flex-align: start;
+        align-items: flex-start;
+    position: relative;
+  }
+  .promo__wrap::after {
+    content: "";
+    position: absolute;
+    bottom: -24px;
+    left: 50%;
+    transform: translateX(-49px);
+    background-image: url(../../img/shape-central.png);
+    background-repeat: no-repeat;
+    width: 98px;
+    height: 25px;
+  }
+  .promo__h1 {
+    max-width: 600px;
+    width: 600px;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: left;
+    margin-left: 0;
+  }
+  .promo__text {
+    width: 600px;
+    max-width: 600px;
+    text-align: left;
+    font-size: 32px;
+  }
+  .promo__text span {
+    font-size: 32px;
+    line-height: 24px;
+  }
+  .promo__text strong {
+    display: inline-block;
+    vertical-align: baseline;
+  }
+  .btn {
+    max-width: 480px;
+    width: 480px;
+    font-size: 24px;
+    margin-left: 0;
+  }
+  .benefits {
+    background-image: url(../img/screen-forest.jpg);
+    background-size: cover;
+  }
+  .benefits__items {
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: stretch;
+        align-items: stretch;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 960px;
+  }
+  .benefits__block {
+    width: 33%;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+  }
+  .benefits__btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .title-h2 {
+    max-width: 960px;
+  }
+  .title-h3 {
+    max-width: 960px;
+  }
+}
