@@ -152,7 +152,7 @@
                 <h2 class="reviews__title">Отзывы наших гостей</h2>
                 <p class="reviews__subtitle">о лечебном голодании</p>
                 <ul class="reviews__list">
-                    <li class="reviews__item">
+                    <li class="reviews__item slide-1 slide-active">
                         <img src="img/response-1.jpg" alt="Отзыв" class="reviews__img" width="151" height="151">
                         <div class="reviews__block">
                             <p class="reviews__name">Владимир. Курс голодания по методике Ю.Николаева - 7 дней</p>
@@ -160,7 +160,7 @@
                             <p class="reviews__comment">*Ваши результаты могут отличаться от заявленных.</p>
                         </div>
                     </li>
-                    <li class="reviews__item">
+                    <li class="reviews__item slide-2">
                         <img src="img/response-2.jpg" alt="Отзыв" class="reviews__img" width="151" height="151">
                         <div class="reviews__block">
                             <p class="reviews__name">Анна. Курс голодания по рецепту фитосбора М.Оганян - 14 дней</p>
@@ -168,7 +168,7 @@
                             <p class="reviews__comment">*Ваши результаты могут отличаться от заявленных.</p>
                         </div>                    
                     </li>
-                    <li class="reviews__item">
+                    <li class="reviews__item slide-3">
                         <img src="img/response-3.jpg" alt="Отзыв" class="reviews__img" width="151" height="151">
                         <div class="reviews__block">
                             <p class="reviews__name">Наталья. Курс голодания по рецепту фитосбора М.Оганян - 21 день</p>
@@ -178,9 +178,9 @@
                     </li>
                 </ul>
                 <div class="slider">
-                    <div class="slider__btn slider__btn--active">Отзыв 1</div>
-                    <div class="slider__btn">Отзыв 2</div>
-                    <div class="slider__btn">Отзыв 3</div>
+                    <div class="slider__btn slide__btn-1 slider__btn--active">Отзыв 1</div>
+                    <div class="slider__btn slide__btn-2">Отзыв 2</div>
+                    <div class="slider__btn slide__btn-3">Отзыв 3</div>
                 </div>
                 <a href="#" class="btn btn--red reviews__link">Забронировать номер!</a>
             </div>
@@ -257,8 +257,8 @@
                 </div>
             </div>
             <div class="help__wrap help__wrap--timer">
-                <p class="help__title">Экономьте сегодня!</p>
-                <p class="help__text">оставьте заявку сегодня и получите скидку на проживание в номере <span>-20%</span></p>
+                <p class="help__title help__title--economy">Экономьте сегодня!</p>
+                <p class="help__text help__text--economy">оставьте заявку сегодня и получите скидку на проживание в номере <span>-20%</span></p>
                 <form action="#" class="help__form">
                     <input type="text" name="name" id="name-2" class="help__name" placeholder="Имя *" required>
                     <input type="tel" name="phone" id="phone-2" class="help__phone" placeholder="Телефон *" required>
@@ -474,7 +474,7 @@
             </ul>
         </section>
         <section class="additions">
-            <p class="additions__title">Помимо самой программы голодания, дополнительно вы получаете:</p>
+            <p class="additions__title additions__title--plus">Помимо самой программы голодания, дополнительно вы получаете:</p>
             <ul class="additions__list">
                 <li class="additions__item additions__item--plus"><span>БИБЛИОТЕКА И НАСТОЛЬНЫЕ ИГРЫ</span>Для теплых дружеских вечеров</li>
                 <li class="additions__item additions__item--plus"><span>WI-FI</span>Вся наша территория покрыта бесплатным доступом в интернет</li>
@@ -501,7 +501,7 @@
             <div class="timer__count">
                 <p class="timer__title">Только сегодня! Скидка -20%</p>
                 <p class="timer__text">до конца акции:</p>
-                <div class="timer__digits">
+                <div class="timer__digits timer__digits--mobile">
                     <div class="timer__block">
                         <p class="timer__number">00</p>
                         <p class="timer__descr">дней</p>
@@ -571,7 +571,7 @@
                             <li class="rooms__item">Сейф</li>
                             <li class="rooms__item">Ванная с душем / ванной</li>
                         </ul>
-                        <a href="" class="btn btn--red">Забронировать!</a>
+                        <a href="" class="btn btn--red rooms__btn">Забронировать!</a>
                     </div>
                 </div>
                 <div class="rooms__block">
@@ -627,8 +627,9 @@
                 </div>
             </div>
             <div class="help__wrap help__wrap--timer">
-                <p class="help__title">Экономьте сегодня!</p>
-                <p class="help__text">оставьте заявку сегодня и получите скидку на проживание в номере <span>-20%</span></p>
+                <p class="help__title help__title--economy">Экономьте сегодня!</p>
+                <p class="help__text help__text--economy {
+">оставьте заявку сегодня и получите скидку на проживание в номере <span>-20%</span></p>
                 <form action="#" class="help__form">
                     <input type="text" name="name" id="name-4" class="help__name" placeholder="Имя *" required>
                     <input type="tel" name="phone" id="phone-4" class="help__phone" placeholder="Телефон *" required>
@@ -638,7 +639,7 @@
                 <a href="" class="help__policy">Политика конфиденциальности</a>
             </div>            
         </section>
-        <section class="benefits" id="courses">
+        <section class="benefits benefits--pad" id="courses">
             <p class="benefits__title">Дополнительные процедуры</p>
             <p class="benefits__subtitle">которые вы можете получить в санатории «БЕРЁЗКИ»</p>
             <ul class="benefits__items">
@@ -787,7 +788,7 @@
             <div class="timer__count">
                 <p class="timer__title">Только сегодня! Скидка -20%</p>
                 <p class="timer__text">до конца акции:</p>
-                <div class="timer__digits">
+                <div class="timer__digits timer__digits--mobile">
                     <div class="timer__block">
                         <p class="timer__number">00</p>
                         <p class="timer__descr">дней</p>

@@ -1,14 +1,31 @@
+.specialists {
+    padding-top: 27px;
+}
+
 .specialists__title {
     width: 320px;
-    box-sizing: border-box;
     background-color: @green;
     padding: 15px 10px;
+    margin-right: 0;
+    margin-left: 0;
+    position: relative;
+    
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -29px;
+        left: 0;
+        width: 320px;
+        height: 29px;
+        background-image: url(../img/shape-green.png);
+        background-repeat: no-repeat;
+    }
 }
 
 .specialists__list {
     list-style-type: none;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 60px;
     padding: 0 10px;
     width: 320px;
     box-sizing: border-box;
@@ -33,7 +50,7 @@
     font-weight: 400;
     text-align: center;
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     margin-top: 0;
     width: 267px;
     height: 60px;

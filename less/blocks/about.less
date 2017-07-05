@@ -25,6 +25,7 @@
     &--limit {
         padding-right: 10px;
         padding-left: 10px;
+        margin-top: 0;
     }
 }
 
@@ -33,21 +34,41 @@
     line-height: 23px;
     text-align: center;
     padding-top: 20px;
-    padding-bottom: 20px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    position: relative;
     background-color: @bg-yellow;
+    
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -29px;
+        left: 0;
+        width: 300px;
+        height: 29px;
+        background-image: url(../img/shape-yellow.png);
+        background-repeat: no-repeat;
+    }
 }
 
 .about__name {
-    font-size: 25px;
+    font-size: 24px;
     line-height: 36px;
     font-weight: 500;
     text-align: center;
     text-transform: uppercase;
+    margin-bottom: 0;
+    margin-top: 10px;
 }
 
 .about__info {
     font-size: 18px;
     text-align: center;
+    margin-top: 10px;
+    margin-bottom: 13px;
     
     span {
         display: block;

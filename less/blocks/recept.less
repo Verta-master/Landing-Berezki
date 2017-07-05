@@ -12,6 +12,8 @@
     font-size: 23px;
     line-height: 28px;
     font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0;
     
     span {
         display: block;
@@ -25,12 +27,31 @@
 
 .recept__img {
     margin: 0 auto;
-    margin-bottom: 10px;
+    
+    &:first-of-type {
+        width: 280px;
+        height: auto;
+    }
+    
+    &:nth-of-type(2) {
+        width: 50px;
+        height: 50px;
+    }
+    
+    &:last-of-type {
+        width: 190px;
+        height: 190px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
 }
 
 .recept__slogan {
+    position: relative;
     padding-left: 15px;
     padding-right: 15px;
+    padding-top: 18px;
+    box-sizing: border-box;
     font-size: 23px;
     line-height: 28px;
     font-weight: 300;
@@ -42,5 +63,16 @@
         font-size: 28px;
         line-height: 35px;
         font-weight: 500;
+    }
+    
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -29px;
+        left: 0;
+        width: 320px;
+        height: 29px;
+        background-image: url(../img/shape-yellow.png);
+        background-repeat: no-repeat;
     }
 }
