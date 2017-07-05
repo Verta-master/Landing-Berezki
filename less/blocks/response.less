@@ -1,3 +1,71 @@
 .response {
     display: none;
 }
+
+//----------------DESKTOP---------------
+
+@media @desktop {
+    .response {
+        display: block;
+        background-image: url(../img/screen-grass.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 55px;
+        padding-bottom: 45px;
+    }
+    
+    .response__title {
+        font-size: 32px;
+        line-height: 36px;
+        text-align: center;
+        margin: 0 auto;
+        background-color: @bg-yellow;
+        border-radius: 10px 10px 0 0;
+        width: 915px;
+        position: relative;
+        
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -29px;
+            left: 0;
+            width: 915px;
+            height: 29px;
+            background-image: url(../img/shape-yellow-large.png);
+            background-repeat: no-repeat;
+        }
+    }
+    
+    .response__block {
+        display: flex;
+        justify-content: space-between;
+        width: 960px;
+        margin: 0 auto;
+        margin-bottom: 35px;
+    }
+    
+    .response__name {
+        color: #fff;
+        font-size: 36px;
+        font-weight: 700;
+        text-align: center;
+    }
+    
+    .response__job {
+        color: #fff;
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: 300;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .response__video {
+        border: 5px solid #fff;
+    }
+    
+    .response__link {
+        margin: 0 auto;
+    }
+}

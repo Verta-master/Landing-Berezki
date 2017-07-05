@@ -1,7 +1,3 @@
-.social {
-    
-}
-
 .social__text {
     text-align: center;
 }
@@ -29,6 +25,10 @@
     background-position: center;
     box-shadow: 0 2px 2px 2px #eee;
     
+    &:hover {
+        opacity: 0.6;
+    }
+    
     &--ok {
         background-image: url(../img/icon-ok.png);
         background-size: 40%;
@@ -50,5 +50,26 @@
         background-color: #c72c66;
         background-image: url(../img/icon-in.png);
         background-size: 70%;
+    }
+}
+
+//----------------DESKTOP---------------
+
+@media @desktop {
+    .social__wrap {
+        width: 960px;
+        padding-bottom: 70px;
+    }
+    
+    .social__text {
+        font-size: 28px;
+        line-height: 44px;
+    }
+    
+    .social__btn {
+        width: 90px;
+        height: 90px;
+        border-radius: 10px;
+        margin-right: 15px;
     }
 }
