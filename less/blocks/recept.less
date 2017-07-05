@@ -82,12 +82,16 @@
 @media @desktop {
     .recept__wrap {
         width: 960px;
+        padding-top: 25px;
+        padding-bottom: 50px;
     }
     
     .recept__text {
-        width: 640px;
+        width: 740px;
         margin-left: auto;
         margin-right: auto;
+        font-size: 32px;
+        line-height: 36px;
         
         span,
         strong {
@@ -97,8 +101,9 @@
     
     .recept__img-wrap {
         display: flex;
-        justify-content: space-around;
+        justify-content: flex-start;
         align-items: center;
+        padding-top: 50px;
     }
     
     .recept__img {
@@ -112,6 +117,7 @@
         &:nth-of-type(2) {
             width: 60px;
             height: 60px;
+            margin-right: 50px;
         }
 
         &:last-of-type {
@@ -123,8 +129,13 @@
     }
     
     .recept__slogan {
+        font-size: 28px;
+        line-height: 40px;
+        border-radius: 10px 10px 0 0;
+        width: 915px;
+        
         &::after {
-            width: 100%;
+            width: 915px;
             background-image: url(../img/shape-yellow-large.png);
         }
     }

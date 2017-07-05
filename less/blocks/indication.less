@@ -25,7 +25,7 @@
     }
     
     &--orange {
-        background-color: #dfad33;
+        background-color: #f0af1d;
     }
     
     &--orange::after {
@@ -120,10 +120,15 @@
 //----------------DESKTOP---------------
 
 @media @desktop {
-    
+    .indication {
+        padding-top: 0;
+        padding-bottom: 130px;
+    }
+
     .indication__bg {
         width: 575px;
         border-radius: 10px 10px 0 0;
+        padding-bottom: 20px;
         
         &::after {
             width: 575px;
@@ -140,9 +145,15 @@
     .indication__external {
         background-image: url(../img/shape-screen-2.png);
         background-repeat: no-repeat;
-        background-position: bottom;
+        background-position: top;
         background-size: cover;
         width: 100%;
+        
+        .indication__img {
+            width: 450px;
+            height: auto;
+            margin-top: 30px;
+        }
     }
     
     .indication__wrap {
@@ -150,8 +161,31 @@
         align-items: center;
         justify-content: flex-end;
         width: 960px;
-        padding-right: 50px;
+        padding-right: 25px;
         background-color: transparent;
+        position: relative;
+        padding-bottom: 30px;
+        
+        &--leaves {
+        
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                top: -150px;
+                right: -360px;
+                width: 195px;
+                height: 266px;
+                background-image: url(../img/leaves.png);
+                background-repeat: no-repeat;
+                z-index: 5;
+            }
+
+            &::before {
+                left: -405px;
+                transform: scale(-1, 1); 
+            }
+        }
     }
     
     .indication__back {
@@ -159,10 +193,48 @@
     }
     
     .indication__list {
-        width: 440px;
+        width: 450px;
+        padding-top: 50px;
     }
     
     .indication__img {
         margin: 0;
+        margin-right: 80px;
+        z-index: 0;
+    }
+    
+    .indication__item {
+        padding-left: 55px;
+        margin-bottom: 20px;
+    }
+    
+    .indication__box {
+        padding-top: 40px;
+    }
+    
+    .indication__btn {
+        position: relative;
+        
+        &:before {
+            content: "";
+            position: absolute;
+            bottom: -120px;
+            left: -750px;
+            width: 399px;
+            height: 415px;
+            background-image: url(../img/single-tree.png);
+            background-repeat: no-repeat;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: -100px;
+            right: -600px;
+            width: 308px;
+            height: 447px;
+            background-image: url(../img/tree.png);
+            background-repeat: no-repeat;
+        }
     }
 }

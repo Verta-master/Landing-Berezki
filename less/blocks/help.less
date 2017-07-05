@@ -88,6 +88,10 @@
     box-sizing: border-box;
     background-color: @bg-yellow;
     background-image: linear-gradient(to bottom, #dcd335, #f5ec4e);
+    
+    &:hover {
+        opacity: 0.8;
+    }
 }
 
 .help__policy {
@@ -103,7 +107,12 @@
 //----------------DESKTOP---------------
 
 @media @desktop {
+    .help {
+        padding-bottom: 120px;
+    }
+    
     .help--single {
+        
         .help__wrap {
             width: 840px;
         }
@@ -113,14 +122,46 @@
             flex-wrap: wrap;
             justify-content: space-around;
             align-items: center;
+            position: relative;
 
             input {
                 width: 32%;
             }
+
+            &:before {
+                content: "";
+                position: absolute;
+                bottom: -180px;
+                left: -550px;
+                width: 399px;
+                height: 415px;
+                background-image: url(../img/single-tree.png);
+                background-repeat: no-repeat;
+            }
+
+            &:after {
+                content: "";
+                position: absolute;
+                bottom: -180px;
+                right: -450px;
+                width: 346px;
+                height: 447px;
+                background-image: url(../img/two-trees.png);
+                background-repeat: no-repeat;
+            }
         }
 
         .help__btn {
-            width: 50%;
+            width: 45%;
+        }
+        
+        .help__text {
+            margin-bottom: 35px;
+        }
+        
+        .help__policy {
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
     }
 }
