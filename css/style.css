@@ -1133,8 +1133,6 @@ textarea {
   width: 320px;
   background-color: #31aa67;
   padding: 15px 10px;
-  margin-right: 0;
-  margin-left: 0;
   position: relative;
 }
 .specialists__title::after {
@@ -1583,6 +1581,7 @@ textarea {
   width: 300px;
   margin: 0 auto;
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 .rooms__block {
   padding-top: 23px;
