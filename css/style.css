@@ -1954,6 +1954,9 @@ textarea {
     padding-top: 20px;
     padding-bottom: 120px;
   }
+  .benefits--pad {
+    padding-bottom: 80px;
+  }
   .benefits__items {
     -ms-flex-direction: row;
         flex-direction: row;
@@ -1982,6 +1985,15 @@ textarea {
     left: -405px;
     transform: scale(-1, 1);
   }
+  .benefits__items--leaves {
+    margin-bottom: 40px;
+  }
+  .benefits__items--leaves::before {
+    top: 1350px;
+  }
+  .benefits__items--leaves::after {
+    top: 1350px;
+  }
   .benefits__block {
     width: 33%;
     -ms-flex-pack: start;
@@ -1990,6 +2002,9 @@ textarea {
   .benefits__btn {
     margin-left: auto;
     margin-right: auto;
+    text-transform: none;
+    font-size: 32px;
+    height: 100px;
   }
   .benefits__title {
     max-width: 960px;
@@ -2058,6 +2073,10 @@ textarea {
   .help--single .help__policy {
     margin-top: 20px;
     margin-bottom: 20px;
+  }
+  .help__wrap--timer {
+    width: 355px;
+    margin: 0 60px;
   }
   .recept__wrap {
     width: 960px;
@@ -2251,21 +2270,28 @@ textarea {
         flex-direction: column;
     width: 100%;
     background-color: transparent;
+    margin-bottom: 20px;
     position: relative;
   }
-  .reviews__list::before,
-  .reviews__list::after {
+  .reviews__list::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: -405px;
+    top: -120px;
+    left: -455px;
     width: 182px;
     height: 161px;
     background-image: url(../img/butterfly.png);
     background-repeat: no-repeat;
   }
   .reviews__list::after {
-    right: -360px;
+    content: "";
+    position: absolute;
+    top: -80px;
+    right: -400px;
+    width: 182px;
+    height: 161px;
+    background-image: url(../img/butterfly.png);
+    background-repeat: no-repeat;
     transform: scale(-1, 1);
   }
   .reviews__item {
@@ -2311,6 +2337,14 @@ textarea {
   .reviews__comment {
     margin-bottom: 10px;
   }
+  .reviews__item:nth-child(2) .reviews__comment,
+  .reviews__item:nth-child(3) .reviews__comment {
+    margin-bottom: 20px;
+  }
+  .reviews__item:nth-child(2) .reviews__text {
+    line-height: 23px;
+    margin-bottom: 25px;
+  }
   .slide-1,
   .slide-2,
   .slide-3 {
@@ -2324,12 +2358,21 @@ textarea {
     width: 960px;
   }
   .specialization__h2 {
-    max-width: 830px;
+    max-width: 880px;
+    font-size: 32px;
+    line-height: 40px;
   }
   .specialization__text {
     max-width: 830px;
+    font-size: 24px;
+  }
+  .specialists {
+    padding-top: 55px;
+    padding-bottom: 40px;
   }
   .specialists__title {
+    font-size: 32px;
+    padding-top: 30px;
     width: 735px;
     border-radius: 10px 10px 0 0;
   }
@@ -2341,6 +2384,7 @@ textarea {
   }
   .specialists__list {
     width: 900px;
+    margin-top: 80px;
     -ms-flex-direction: row;
         flex-direction: row;
     -ms-flex-wrap: wrap;
@@ -2351,15 +2395,21 @@ textarea {
   .additions {
     background-image: url(../img/screen-6.jpg);
     background-size: cover;
+    padding-top: 50px;
   }
   .additions__title {
     max-width: 960px;
     font-size: 32px;
     line-height: 36px;
+    margin-bottom: 70px;
+  }
+  .additions__title--plus {
+    font-size: 40px;
     margin-bottom: 60px;
   }
   .additions__list {
     width: 960px;
+    padding-bottom: 30px;
     -ms-flex-direction: row;
         flex-direction: row;
     -ms-flex-wrap: wrap;
@@ -2376,12 +2426,16 @@ textarea {
         flex-grow: 1;
     padding-top: 0;
     padding-left: 110px;
+    margin-bottom: 15px;
     box-sizing: border-box;
     text-align: left;
   }
   .additions__item::before {
-    top: -30px;
-    left: 50px;
+    top: -10px;
+    left: 40px;
+  }
+  .additions__item span {
+    padding-left: 0;
   }
   .timer {
     display: -ms-flexbox;
@@ -2407,8 +2461,49 @@ textarea {
     -ms-flex-order: 2;
         order: 2;
   }
+  .timer__wrap {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center;
+    width: 960px;
+  }
+  .timer__title {
+    font-size: 48px;
+    line-height: 52px;
+    width: 400px;
+  }
+  .timer__text {
+    width: 400px;
+  }
+  .timer__count {
+    width: 400px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 40px;
+  }
+  .timer__digits {
+    width: 400px;
+    margin-top: 30px;
+  }
+  .timer__block {
+    width: 85px;
+    height: 85px;
+  }
+  .timer__number {
+    font-size: 56px;
+  }
+  .timer__descr {
+    font-size: 20px;
+  }
+  .timer__comment {
+    font-size: 16px;
+  }
   .price {
     display: block;
+    padding-top: 35px;
   }
   .price__title {
     font-size: 40px;
@@ -2424,6 +2519,7 @@ textarea {
     width: 960px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 25px;
   }
   .price__anonce {
     display: -ms-flexbox;
@@ -2453,6 +2549,22 @@ textarea {
     border: 1px solid #d7e3f2;
     width: 960px;
     margin: 0 auto;
+    position: relative;
+  }
+  .price__table::before,
+  .price__table::after {
+    content: "";
+    position: absolute;
+    bottom: 210px;
+    right: -360px;
+    width: 195px;
+    height: 266px;
+    background-image: url(../img/leaves.png);
+    background-repeat: no-repeat;
+  }
+  .price__table::before {
+    left: -405px;
+    transform: scale(-1, 1);
   }
   .price__bg {
     background-color: #fff;
@@ -2509,13 +2621,14 @@ textarea {
     -ms-flex-pack: end;
         justify-content: flex-end;
     width: 960px;
-    margin: 20px auto;
+    margin: 40px auto 20px auto;
   }
   .price__link {
     width: 240px;
     margin-right: 40px;
     margin-left: 40px;
     text-transform: none;
+    height: 60px;
   }
   .price__comment {
     color: #de4d33;
@@ -2529,10 +2642,12 @@ textarea {
     display: -ms-flexbox;
     display: flex;
     padding-top: 60px;
+    position: relative;
   }
   .arrival__h2 {
     font-size: 36px;
     text-align: left;
+    margin-bottom: 45px;
   }
   .arrival__subtitle {
     font-size: 24px;
@@ -2540,18 +2655,30 @@ textarea {
   }
   .arrival__text {
     font-size: 18px;
+    margin-bottom: 25px;
+  }
+  .arrival__text:last-of-type {
+    padding-right: 100px;
   }
   .arrival__block {
-    padding-bottom: 60px;
+    padding-bottom: 50px;
     max-width: 640px;
   }
   .arrival__img {
-    width: 320px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 450px;
     height: auto;
+  }
+  .tariff {
+    padding-bottom: 50px;
   }
   .tariff__title {
     width: 960px;
     font-size: 32px;
+    padding-top: 60px;
+    padding-bottom: 45px;
   }
   .tariff__block {
     width: 960px;
@@ -2560,6 +2687,23 @@ textarea {
   }
   .about__wrap {
     width: 960px;
+    padding-top: 20px;
+    position: relative;
+  }
+  .about__wrap::before,
+  .about__wrap::after {
+    content: "";
+    position: absolute;
+    top: 100px;
+    right: -360px;
+    width: 195px;
+    height: 266px;
+    background-image: url(../img/leaves.png);
+    background-repeat: no-repeat;
+  }
+  .about__wrap::before {
+    left: -405px;
+    transform: scale(-1, 1);
   }
   .about__subtitle {
     font-size: 28px;
@@ -2567,6 +2711,7 @@ textarea {
   .about__text {
     font-size: 20px;
     line-height: 24px;
+    padding: 0;
   }
   .about__slogan {
     font-size: 32px;
@@ -2602,19 +2747,30 @@ textarea {
     -ms-flex-align: stretch;
         align-items: stretch;
   }
+  .about__info {
+    margin-top: 0;
+  }
+  .about__info span {
+    font-size: 14px;
+  }
   .rooms {
     background-image: url(../img/shape-screen-2.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: top;
   }
   .rooms__wrap {
     width: 960px;
+    padding-top: 80px;
+    padding-bottom: 40px;
   }
   .rooms__block {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
         justify-content: space-between;
+    padding-top: 35px;
+    padding-bottom: 28px;
   }
   .rooms__large {
     width: 546px;
@@ -2632,10 +2788,20 @@ textarea {
     width: 390px;
   }
   .rooms__btn {
-    width: 390px;
+    width: 360px;
+  }
+  .rooms__name {
+    font-size: 30px;
+  }
+  .rooms__list {
+    padding-bottom: 25px;
+  }
+  .tour {
+    padding-bottom: 40px;
   }
   .tour__list {
     width: 960px;
+    padding-top: 20px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
@@ -2646,13 +2812,19 @@ textarea {
   .tour__name {
     font-size: 28px;
     text-align: left;
+    padding-left: 10px;
+    margin-bottom: 35px;
   }
   .tour__item:nth-child(2n) .tour__name {
     text-align: right;
+    padding-right: 10px;
+  }
+  .tour__item {
+    padding: 0 20px;
   }
   .tour__item::after {
-    top: 85px;
-    left: 4px;
+    top: 92px;
+    left: 25px;
     width: 420px;
     height: 225px;
   }
@@ -2662,13 +2834,14 @@ textarea {
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 55px;
-    padding-bottom: 45px;
+    padding-bottom: 55px;
   }
   .response__title {
     font-size: 32px;
     line-height: 36px;
     text-align: center;
     margin: 0 auto;
+    padding-top: 20px;
     background-color: #f8ea12;
     border-radius: 10px 10px 0 0;
     width: 915px;
@@ -2691,6 +2864,7 @@ textarea {
         justify-content: space-between;
     width: 960px;
     margin: 0 auto;
+    margin-top: 25px;
     margin-bottom: 35px;
   }
   .response__name {
@@ -2698,6 +2872,7 @@ textarea {
     font-size: 36px;
     font-weight: 700;
     text-align: center;
+    margin-bottom: 0;
   }
   .response__job {
     color: #fff;
@@ -2707,12 +2882,17 @@ textarea {
     text-align: center;
     padding-left: 10px;
     padding-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 15px;
   }
   .response__video {
     border: 5px solid #fff;
   }
   .response__link {
     margin: 0 auto;
+    text-transform: none;
+    height: 100px;
+    font-size: 28px;
   }
   .certify {
     display: block;
@@ -2725,7 +2905,7 @@ textarea {
     width: 960px;
     margin: 0 auto;
     margin-top: 30px;
-    margin-bottom: 65px;
+    margin-bottom: 77px;
   }
   .certify__img {
     width: 160px;
@@ -2753,6 +2933,8 @@ textarea {
   }
   .map__title {
     font-size: 28px;
+    border-radius: 10px 10px 0 0;
+    line-height: 40px;
   }
   .map__text {
     text-align: left;
@@ -2760,21 +2942,30 @@ textarea {
     line-height: 24px;
     padding: 20px;
     padding-right: 50px;
+    padding-top: 10px;
     border-radius: 0 0 10px 10px;
+  }
+  .social {
+    padding-top: 50px;
+    background-image: url(../img/hands.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
   }
   .social__wrap {
     width: 960px;
-    padding-bottom: 70px;
+    padding-bottom: 80px;
   }
   .social__text {
     font-size: 28px;
     line-height: 44px;
+    margin-top: 10px;
   }
   .social__btn {
-    width: 90px;
-    height: 90px;
+    width: 95px;
+    height: 95px;
     border-radius: 10px;
-    margin-right: 15px;
+    margin-right: 18px;
   }
   .footer-main {
     width: 100%;
@@ -2798,6 +2989,7 @@ textarea {
     background-position: left center;
   }
   .footer-main .logo {
-    margin-left: 17px;
+    margin-left: 10px;
+    margin-top: 0;
   }
 }
