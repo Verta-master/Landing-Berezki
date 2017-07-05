@@ -1474,6 +1474,7 @@ textarea {
   text-align: center;
 }
 .arrival__img {
+  display: block;
   margin: 0 auto;
   padding: 0;
 }
@@ -1626,6 +1627,7 @@ textarea {
 .rooms__small {
   width: 70px;
   height: 45px;
+  cursor: pointer;
 }
 .rooms__gallery {
   margin: 0 auto;
@@ -2673,7 +2675,7 @@ textarea {
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 450px;
+    width: 350px;
     height: auto;
   }
   .tariff {
@@ -2914,7 +2916,8 @@ textarea {
   }
   .certify__img {
     width: 160px;
-    height: 240px;
+    height: 230px;
+    cursor: pointer;
   }
   .map__wrap {
     position: relative;
@@ -2952,10 +2955,6 @@ textarea {
   }
   .social {
     padding-top: 50px;
-    background-image: url(../img/hands.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
   }
   .social__wrap {
     width: 960px;
@@ -2971,6 +2970,30 @@ textarea {
     height: 95px;
     border-radius: 10px;
     margin-right: 18px;
+  }
+  .social__buttons {
+    position: relative;
+  }
+  .social__buttons::before {
+    content: "";
+    position: absolute;
+    bottom: -95px;
+    left: -270px;
+    background-image: url(../../img/hands.jpg);
+    background-repeat: no-repeat;
+    width: 295px;
+    height: 339px;
+  }
+  .social__buttons::after {
+    content: "";
+    position: absolute;
+    bottom: -95px;
+    right: -270px;
+    background-image: url(../../img/hands.jpg);
+    background-repeat: no-repeat;
+    width: 295px;
+    height: 339px;
+    transform: scale(-1, 1);
   }
   .footer-main {
     width: 100%;
