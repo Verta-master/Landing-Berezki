@@ -794,7 +794,6 @@ textarea {
   margin-bottom: 0;
 }
 .recept__text span {
-  display: block;
   color: #31aa67;
 }
 .recept__text strong {
@@ -802,6 +801,7 @@ textarea {
 }
 .recept__img {
   margin: 0 auto;
+  display: block;
 }
 .recept__img:first-of-type {
   width: 280px;
@@ -885,7 +885,7 @@ textarea {
   background-image: url(../img/grass.png);
   background-position: bottom;
   background-repeat: repeat-x;
-  padding-bottom: 120px;
+  padding-bottom: 112px;
   padding-top: 30px;
 }
 .indication__bg {
@@ -911,7 +911,7 @@ textarea {
 .indication__bg--orange::after {
   background-image: url(../img/shape-orange.png);
 }
-.title-h3 ~ .indication__bg--orange {
+.indication__external .title-h3 {
   color: #243146;
   margin-bottom: 15px;
 }
@@ -2006,6 +2006,9 @@ textarea {
     font-size: 32px;
     height: 100px;
   }
+  .benefits__btn--up {
+    font-size: 24px;
+  }
   .benefits__title {
     max-width: 960px;
     font-size: 44px;
@@ -2066,6 +2069,7 @@ textarea {
   }
   .help--single .help__btn {
     width: 45%;
+    margin: 0 auto;
   }
   .help--single .help__text {
     margin-bottom: 35px;
@@ -2230,6 +2234,7 @@ textarea {
   }
   .indication__btn {
     position: relative;
+    margin: 0 auto;
   }
   .indication__btn:before {
     content: "";
