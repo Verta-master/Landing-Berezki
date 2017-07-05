@@ -115,3 +115,29 @@
     box-sizing: border-box;
     height: 100px;
 }
+
+//----------------DESKTOP---------------
+
+@media @desktop {
+    .indication__bg {
+        width: 575px;
+        
+        &::after {
+            width: 575px;
+            height: 18px;
+            background-image: url(../img/shape-red-large.png);
+            background-size: cover;
+        }
+        
+        &--orange::after {
+            background-image: url(../img/shape-orange-large.png);
+        }
+    }
+    
+    .indication__wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 960px;
+    }
+}

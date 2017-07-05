@@ -76,3 +76,56 @@
         background-repeat: no-repeat;
     }
 }
+
+//----------------DESKTOP---------------
+
+@media @desktop {
+    .recept__wrap {
+        width: 960px;
+    }
+    
+    .recept__text {
+        width: 640px;
+        margin-left: auto;
+        margin-right: auto;
+        
+        span,
+        strong {
+            display: inline-block;
+        }
+    }
+    
+    .recept__img-wrap {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .recept__img {
+        margin: 0;
+
+        &:first-of-type {
+            width: 461px;
+            height: auto;
+        }
+
+        &:nth-of-type(2) {
+            width: 60px;
+            height: 60px;
+        }
+
+        &:last-of-type {
+            width: 299px;
+            height: 299px;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+    
+    .recept__slogan {
+        &::after {
+            width: 100%;
+            background-image: url(../img/shape-yellow-large.png);
+        }
+    }
+}
