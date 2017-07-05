@@ -44,6 +44,10 @@
     
     .menu__block {
         border-bottom: 1px solid #fff;
+        
+        &:hover {
+            background-color: #4cbf80;
+        }
     }
     
     .menu__block:last-child {
@@ -76,7 +80,18 @@
     .menu {
         background-color: @green;
     }
-    
+
+    .menu__block {
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+        
+        &:hover,
+        .active {
+            background-color: #4cbf80;
+        }
+    }
+
     .menu__toggle {
         display: none;
     }
@@ -86,7 +101,7 @@
         justify-content: space-between;
         list-style-type: none;
         margin: 0 auto;
-        padding: 0 17px;
+        padding: 0;
         width: 960px;
         box-sizing: border-box;
     }
@@ -100,5 +115,5 @@
         text-decoration: none;
         font-size: 22px;
         line-height: 36px;
-    }
+    }    
 }

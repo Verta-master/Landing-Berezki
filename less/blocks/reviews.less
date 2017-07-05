@@ -90,3 +90,49 @@
     padding-bottom: 20px;
     height: 100px;
 }
+
+//----------------DESKTOP---------------
+
+@media @desktop {
+    .reviews__wrap {
+        width: 960px;
+    }
+    
+    .reviews__list {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: transparent;
+    }
+    
+    .reviews__item {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 20px 15px 0 15px;
+        margin-bottom: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+    }
+    
+    .reviews__block,
+    .reviews__name,
+    .reviews__text,
+    .reviews__comment {
+        max-width: 100%;
+    }
+    
+    .reviews__img {
+        margin: 0;
+        margin-right: 15px;
+    }
+    
+    .reviews__name {
+        text-align: left;
+        padding-left: 0;
+    }
+    
+    .reviews__link {
+        margin: 0 auto;
+    }
+}

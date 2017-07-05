@@ -114,13 +114,16 @@
     text-transform: none;
     box-sizing: border-box;
     height: 100px;
+    margin: 0 auto;
 }
 
 //----------------DESKTOP---------------
 
 @media @desktop {
+    
     .indication__bg {
         width: 575px;
+        border-radius: 10px 10px 0 0;
         
         &::after {
             width: 575px;
@@ -137,7 +140,27 @@
     .indication__wrap {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-end;
         width: 960px;
+        padding-right: 50px;
+        
+        &--bg {
+            background-image: url(../img/shape-screen-2.png);
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-size: cover;
+        }
+    }
+    
+    .indication__back {
+        background-image: linear-gradient(to top, #fff, #f4f4f6);
+    }
+    
+    .indication__list {
+        width: 440px;
+    }
+    
+    .indication__img {
+        margin: 0;
     }
 }

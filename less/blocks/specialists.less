@@ -63,3 +63,26 @@
     margin-bottom: 10px;
     border: 1px solid #d1daf6;
 }
+
+//----------------DESKTOP---------------
+
+@media @desktop {
+    .specialists__title {
+        width: 735px;
+        border-radius: 10px 10px 0 0;
+        
+        &::after {
+            width: 735px;
+            height: 29px;
+            background-image: url(../../img/shape-green-large.png);
+            background-size: cover;
+        }
+    }
+    
+    .specialists__list {
+        width: 900px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}

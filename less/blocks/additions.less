@@ -137,3 +137,37 @@
 .additions__item--plus:last-child::before {
     background-image: url(../img/icon-16.svg);
 }
+
+//----------------DESKTOP---------------
+
+@media @desktop {
+    .additions__title {
+        max-width: 960px;
+        font-size: 32px;
+        line-height: 36px;
+        margin-bottom: 60px;
+    }
+    
+    .additions__list {
+        width: 960px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+    
+    .additions__item {
+        max-width: 50%;
+        min-height: 90px;
+        flex-grow: 1;
+        padding-top: 0;
+        padding-left: 110px;
+        box-sizing: border-box;
+        text-align: left;
+        
+        &::before {
+            top: -30px;
+            left: 50px;
+        }
+    }
+}
