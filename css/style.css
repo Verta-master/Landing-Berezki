@@ -457,7 +457,7 @@ textarea {
 }
 .logo {
   margin-top: 7px;
-  margin-bottom: 12px;
+  margin-bottom: 5px;
   margin-left: 17px;
 }
 .header-main__wrap {
@@ -479,6 +479,7 @@ textarea {
   width: 320px;
   min-height: 562px;
   padding: 10px;
+  padding-bottom: 55px;
   margin: 0 auto;
   box-sizing: border-box;
   display: -ms-flexbox;
@@ -495,12 +496,14 @@ textarea {
   line-height: 45px;
   text-align: center;
   max-width: 300px;
+  margin-bottom: 20px;
 }
 .promo__text {
   font-size: 20px;
   line-height: 25px;
   text-align: center;
   margin-top: 0;
+  margin-bottom: 20px;
   max-width: 300px;
 }
 .promo__text span {
@@ -513,7 +516,7 @@ textarea {
   display: block;
   font-size: 23px;
   line-height: 24px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .btn {
   max-width: 300px;
@@ -548,7 +551,10 @@ textarea {
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
+}
+.benefits--pad {
+  padding-bottom: 0;
 }
 .benefits__title {
   font-size: 36px;
@@ -556,7 +562,8 @@ textarea {
   line-height: 24px;
   text-align: center;
   margin-top: 0;
-  padding-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 40px;
   max-width: 300px;
   margin-left: auto;
   margin-right: auto;
@@ -607,7 +614,8 @@ textarea {
   line-height: 24px;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin-bottom: 0;
+  margin-top: 26px;
   max-width: 300px;
 }
 .benefits__text {
@@ -617,6 +625,7 @@ textarea {
   text-align: center;
   padding-left: 35px;
   padding-right: 35px;
+  margin-top: 15px;
   max-width: 300px;
 }
 .benefits__text span {
@@ -630,8 +639,8 @@ textarea {
   padding-right: 18px;
 }
 .benefits__block:nth-child(5) .benefits__text {
-  padding-left: 65px;
-  padding-right: 65px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 .benefits__subtitle {
   max-width: 300px;
@@ -648,7 +657,8 @@ textarea {
   width: 300px;
   background-color: #31aa67;
   color: #fff;
-  padding: 5px;
+  padding: 5px 10px;
+  box-sizing: border-box;
   margin: 0 auto;
   border-radius: 10px;
 }
@@ -657,14 +667,31 @@ textarea {
   line-height: 30px;
   font-weight: 500;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   margin-top: 20px;
+}
+.help__title--economy {
+  font-size: 25px;
+  line-height: 52px;
+  margin-top: 5px;
+  margin-bottom: 0;
 }
 .help__text {
   font-size: 18px;
   line-height: 18px;
   font-weight: 400;
   text-align: center;
+  margin-top: 0;
+}
+.help__text span {
+  display: block;
+  font-size: 36px;
+  line-height: 36px;
+  color: #f8ea12;
+}
+.help__text--economy {
+  font-size: 16px;
+  margin-bottom: 10px;
 }
 .help__form {
   margin: 0 auto;
@@ -678,8 +705,8 @@ textarea {
   line-height: 36px;
   font-weight: 300;
   color: #243146;
-  margin-bottom: 5px;
-  padding: 10px 30px;
+  margin-bottom: 6px;
+  padding: 10px 25px;
   box-sizing: border-box;
 }
 .help__form input::-webkit-input-placeholder {
@@ -701,7 +728,8 @@ textarea {
   font-weight: 700;
   border-radius: 50px;
   width: 100%;
-  padding: 15px 20px;
+  padding: 21px 10px;
+  margin-top: 5px;
   box-sizing: border-box;
   background-color: #f8ea12;
   background-image: linear-gradient(to bottom, #dcd335, #f5ec4e);
@@ -713,7 +741,7 @@ textarea {
   font-size: 14px;
   line-height: 22px;
   text-align: center;
-  margin: 5px auto;
+  margin: 10px auto;
 }
 .recept__wrap {
   width: 320px;
@@ -732,6 +760,8 @@ textarea {
   font-size: 23px;
   line-height: 28px;
   font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .recept__text span {
   display: block;
@@ -742,11 +772,27 @@ textarea {
 }
 .recept__img {
   margin: 0 auto;
-  margin-bottom: 10px;
+}
+.recept__img:first-of-type {
+  width: 280px;
+  height: auto;
+}
+.recept__img:nth-of-type(2) {
+  width: 50px;
+  height: 50px;
+}
+.recept__img:last-of-type {
+  width: 190px;
+  height: 190px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 .recept__slogan {
+  position: relative;
   padding-left: 15px;
   padding-right: 15px;
+  padding-top: 18px;
+  box-sizing: border-box;
   font-size: 23px;
   line-height: 28px;
   font-weight: 300;
@@ -759,27 +805,40 @@ textarea {
   line-height: 35px;
   font-weight: 500;
 }
+.recept__slogan::after {
+  content: "";
+  position: absolute;
+  bottom: -29px;
+  left: 0;
+  width: 320px;
+  height: 29px;
+  background-image: url(../img/shape-yellow.png);
+  background-repeat: no-repeat;
+}
 .title-h2 {
   font-size: 30px;
   line-height: 30px;
   color: #243146;
   text-align: center;
   font-weight: 500;
+  margin: 0 auto;
   margin-bottom: 10px;
+  padding-top: 42px;
   max-width: 300px;
 }
 .video {
-  background-image: url(../../img/screen-3-mobile.jpg);
+  background-image: url(../img/screen-3-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
+  margin-top: 25px;
 }
 .video__block {
   margin: 0 auto;
-  padding-top: 30px;
+  padding-top: 15px;
   width: 320px;
   box-sizing: border-box;
-  padding-bottom: 75px;
+  padding-bottom: 90px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -796,16 +855,35 @@ textarea {
   background-image: url(../img/grass.png);
   background-position: bottom;
   background-repeat: repeat-x;
-  padding-bottom: 125px;
+  padding-bottom: 120px;
+  padding-top: 30px;
 }
 .indication__bg {
   width: 300px;
   background-color: #de4d33;
   padding: 10px;
+  padding-bottom: 5px;
+  position: relative;
+}
+.indication__bg::after {
+  content: "";
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+  width: 320px;
+  height: 18px;
+  background-image: url(../img/shape-red.png);
+  background-repeat: no-repeat;
 }
 .indication__bg--orange {
   background-color: #dfad33;
+}
+.indication__bg--orange::after {
+  background-image: url(../img/shape-orange.png);
+}
+.title-h3 ~ .indication__bg--orange {
   color: #243146;
+  margin-bottom: 15px;
 }
 .indication__wrap {
   width: 320px;
@@ -820,14 +898,23 @@ textarea {
 .indication__list {
   list-style-type: none;
   padding: 0;
+  padding-top: 15px;
+  padding-bottom: 7px;
   margin: 0;
 }
 .indication__item {
   font-size: 18px;
   line-height: 26px;
   padding-left: 40px;
-  margin-bottom: 14px;
+  margin-bottom: 17px;
   position: relative;
+}
+.indication__item--pro {
+  line-height: 24px;
+  margin-bottom: 14px;
+}
+.indication__item--pro:last-child {
+  margin-bottom: 5px;
 }
 .indication__item--con::before,
 .indication__item--pro::before {
@@ -845,12 +932,16 @@ textarea {
 }
 .indication__img {
   margin: 0 auto;
+  width: 300px;
+  height: auto;
 }
 .indication__comment {
   font-size: 15px;
   line-height: 20px;
   font-weight: 300;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 23px;
 }
 .indication__btn {
   padding-top: 20px;
@@ -858,6 +949,8 @@ textarea {
   font-size: 28px;
   line-height: 28px;
   text-transform: none;
+  box-sizing: border-box;
+  height: 100px;
 }
 .title-h3 {
   font-size: 25px;
@@ -867,11 +960,13 @@ textarea {
   text-align: center;
   margin: 0 auto;
   max-width: 300px;
+  padding-top: 15px;
 }
 .reviews {
   background-image: url(../img/screen-4-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  padding-bottom: 45px;
 }
 .reviews__wrap {
   width: 320px;
@@ -891,6 +986,7 @@ textarea {
   line-height: 36px;
   font-weight: 400;
   text-align: center;
+  margin-top: 0;
 }
 .reviews__list {
   list-style-type: none;
@@ -899,9 +995,6 @@ textarea {
   width: 300px;
   background-color: #fff;
   border-radius: 10px;
-}
-.reviews__item:nth-child(n+2) {
-  display: none;
 }
 .reviews__item {
   display: -ms-flexbox;
@@ -915,7 +1008,7 @@ textarea {
 }
 .reviews__img {
   margin-top: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 .reviews__name {
   font-size: 18px;
@@ -924,6 +1017,8 @@ textarea {
   text-align: center;
   padding-left: 25px;
   padding-right: 25px;
+  margin-top: 0;
+  margin-bottom: 0;
   max-width: 300px;
 }
 .reviews__block {
@@ -934,11 +1029,15 @@ textarea {
 .reviews__text {
   line-height: 20px;
   max-width: 300px;
+  margin-top: 10px;
+  margin-bottom: 25px;
 }
 .reviews__comment {
   font-size: 15px;
   line-height: 18px;
   max-width: 300px;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 .reviews__link {
   font-size: 28px;
@@ -946,9 +1045,11 @@ textarea {
   text-transform: none;
   padding-top: 20px;
   padding-bottom: 20px;
+  height: 100px;
 }
 .slider {
   margin: 0 auto;
+  margin-bottom: 15px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -967,6 +1068,15 @@ textarea {
 }
 .slider__btn--active {
   background-color: #31aa67;
+}
+.slide-1,
+.slide-2,
+.slide-3 {
+  display: none;
+}
+.slide-active {
+  display: -ms-flexbox;
+  display: flex;
 }
 .specialization {
   background-color: #000;
@@ -1016,16 +1126,31 @@ textarea {
 .specialization__text span {
   color: #31aa67;
 }
+.specialists {
+  padding-top: 27px;
+}
 .specialists__title {
   width: 320px;
-  box-sizing: border-box;
   background-color: #31aa67;
   padding: 15px 10px;
+  margin-right: 0;
+  margin-left: 0;
+  position: relative;
+}
+.specialists__title::after {
+  content: "";
+  position: absolute;
+  bottom: -29px;
+  left: 0;
+  width: 320px;
+  height: 29px;
+  background-image: url(../img/shape-green.png);
+  background-repeat: no-repeat;
 }
 .specialists__list {
   list-style-type: none;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 60px;
   padding: 0 10px;
   width: 320px;
   box-sizing: border-box;
@@ -1056,7 +1181,7 @@ textarea {
   font-weight: 400;
   text-align: center;
   border-radius: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   margin-top: 0;
   width: 267px;
   height: 60px;
@@ -1077,6 +1202,7 @@ textarea {
   background-image: url(../img/screen-6-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 25px;
 }
 .additions__title {
   max-width: 300px;
@@ -1086,10 +1212,16 @@ textarea {
   margin: 0 auto;
   text-align: center;
 }
+.additions__title--plus {
+  font-size: 25px;
+  line-height: 28px;
+  margin-top: 10px;
+}
 .additions__list {
   margin: 0 auto;
   padding: 0;
-  padding-bottom: 45px;
+  padding-bottom: 37px;
+  padding-top: 16px;
   width: 300px;
   list-style-type: none;
   display: -ms-flexbox;
@@ -1103,7 +1235,8 @@ textarea {
 }
 .additions__item {
   text-align: center;
-  padding-top: 105px;
+  padding-top: 110px;
+  margin-bottom: 10px;
   max-width: 300px;
   position: relative;
   font-size: 20px;
@@ -1126,8 +1259,8 @@ textarea {
   top: 10px;
   left: 50%;
   transform: translateX(-40px);
-  width: 80px;
-  height: 80px;
+  width: 85px;
+  height: 85px;
   background-color: #de4d33;
   border-radius: 50%;
   background-repeat: no-repeat;
@@ -1226,14 +1359,18 @@ textarea {
   line-height: 44px;
   font-weight: 300;
   text-align: center;
-  margin-top: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 .timer__digits {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  margin-bottom: 45px;
+  margin-bottom: 48px;
+}
+.timer__digits--mobile {
+  margin-bottom: 0;
 }
 .timer__block {
   background-color: #31aa67;
@@ -1268,6 +1405,7 @@ textarea {
   line-height: 25px;
   font-weight: 500;
   text-align: center;
+  margin-top: 10px;
 }
 .timer__comment span {
   display: inline-block;
@@ -1305,6 +1443,10 @@ textarea {
   font-size: 20px;
   line-height: 24px;
   text-align: center;
+}
+.arrival__img {
+  margin: 0 auto;
+  padding: 0;
 }
 .tariff__title {
   width: 300px;
@@ -1394,25 +1536,45 @@ textarea {
 .about__text--limit {
   padding-right: 10px;
   padding-left: 10px;
+  margin-top: 0;
 }
 .about__slogan {
   font-size: 20px;
   line-height: 23px;
   text-align: center;
   padding-top: 20px;
-  padding-bottom: 20px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 50px;
+  position: relative;
   background-color: #f8ea12;
 }
+.about__slogan::after {
+  content: "";
+  position: absolute;
+  bottom: -29px;
+  left: 0;
+  width: 300px;
+  height: 29px;
+  background-image: url(../img/shape-yellow.png);
+  background-repeat: no-repeat;
+}
 .about__name {
-  font-size: 25px;
+  font-size: 24px;
   line-height: 36px;
   font-weight: 500;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 0;
+  margin-top: 10px;
 }
 .about__info {
   font-size: 18px;
   text-align: center;
+  margin-top: 10px;
+  margin-bottom: 13px;
 }
 .about__info span {
   display: block;
@@ -1420,10 +1582,17 @@ textarea {
 .rooms__wrap {
   width: 300px;
   margin: 0 auto;
+  padding-top: 20px;
+}
+.rooms__block {
+  padding-top: 23px;
+}
+.rooms__block:nth-of-type(2) {
+  padding-top: 30px;
 }
 .rooms__small {
   width: 70px;
-  height: 42px;
+  height: 45px;
 }
 .rooms__gallery {
   margin: 0 auto;
@@ -1439,23 +1608,23 @@ textarea {
   line-height: 44px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 15px;
+  margin-bottom: 8px;
 }
 .rooms__text {
   font-size: 18px;
   line-height: 20px;
   font-weight: 300;
   margin: 0;
-  padding-bottom: 27px;
+  padding-bottom: 0;
 }
 .rooms__comfort {
   font-size: 20px;
   line-height: 44px;
   font-weight: 500;
   text-transform: uppercase;
-  margin-top: 15px;
-  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 0;
 }
 .rooms__list {
   margin: 0;
@@ -1466,14 +1635,20 @@ textarea {
   line-height: 24px;
   font-weight: 300;
 }
+.rooms__btn {
+  height: 82px;
+}
+.tour {
+  padding-bottom: 20px;
+}
 .tour__list {
   width: 300px;
   margin: 0 auto;
   padding: 0;
   list-style-type: none;
 }
-.tour__item:nth-child(2n) .tour__name {
-  text-align: right;
+.tour__name {
+  text-align: center;
 }
 .tour__item {
   position: relative;
@@ -1599,4 +1774,7 @@ textarea {
 }
 .footer-main .user-block__phone {
   display: block;
+}
+.footer-main .logo {
+  margin-left: 0;
 }
