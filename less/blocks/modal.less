@@ -1,7 +1,8 @@
 .modal {
     display: none;
-    position: absolute;
-    width: 600px;
+    position: fixed;
+    top: 50%;
+    width: 300px;
     padding: 10px;
     box-sizing: border-box;
     background-color: #fff;
@@ -9,7 +10,21 @@
     box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
     z-index: 15;
     left: 50%;
-    transform: translate(-300px,0);
+    transform: translate(-50%,-50%);
+}
+
+.certificate {
+    display: none;
+    position: absolute;
+    width: 300px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+    z-index: 15;
+    left: 50%;
+    transform: translate(-50%,0);
 }
 
 .modal__header {
@@ -42,7 +57,6 @@
 .modal--video {
     display: none;
     width: 320px;
-    left: 92%;
     
     iframe {
         margin-top: 10px;
@@ -61,13 +75,11 @@
 .modal--book3,
 .modal--phone {
     width: 300px;
-    left: 50%;
-    transform: translateX(-150px);
 }
 
 .modal__text {
     font-size: 16px;
-    line-height: 36px;
+    line-height: 26px;
     text-align: center;
     font-weight: 500;
 }
@@ -79,11 +91,14 @@
 //----------------DESKTOP---------------
 
 @media @desktop {
+    .modal,
+    .certificate {
+        width: 600px;
+    }
+    
     .modal--tour,
     .modal--video {
         width: 660px;
-        left: 50%;
-        transform: translateX(-325px);
     
         iframe {
             width: 640px;
@@ -101,7 +116,5 @@
     .modal--book3,
     .modal--phone {
         width: 400px;
-        left: 50%;
-        transform: translateX(-200px);
     }
 }
