@@ -109,7 +109,7 @@
                     <input type="text" name="code" id="code" class="help__code" placeholder="Промокод на скидку">
                     <button type="submit" class="help__btn">Получить рекомендацию!</button>
                 </form>
-                <a href="" class="help__policy">Политика конфиденциальности</a>
+                <a href="policy.html" class="help__policy">Политика конфиденциальности</a>
             </div>
         </section>
         <section class="recept">
@@ -165,7 +165,14 @@
                 </div>
             </div>
             <div class="indication__back">
-                <a href="#" class="btn btn--green indication__btn">Получить консультацию</a>
+                <a href="#consult" class="btn btn--green indication__btn btn--consult">Получить консультацию</a>
+                <div class="modal modal--consult" id="consult">
+                    <div class="modal__header">
+                        <h3 class="modal__title">Как получить консультацию?</h3>
+                        <button class="modal__close modal__close--consult">Закрыть</button>
+                    </div>
+                    <p class="modal__text">Пожалуйста, заполните форму,<br>и мы вам перезвоним</p>
+                </div>
             </div>
         </section>
         <section class="reviews" id="reviews">
@@ -203,7 +210,14 @@
                     <div class="slider__btn slide__btn-2">Отзыв 2</div>
                     <div class="slider__btn slide__btn-3">Отзыв 3</div>
                 </div>
-                <a href="#" class="btn btn--red reviews__link">Забронировать номер!</a>
+                <a href="#book" class="btn btn--red reviews__link btn--book">Забронировать номер!</a>
+                <div class="modal modal--book" id="book">
+                    <div class="modal__header">
+                        <h3 class="modal__title">Как забронировать номер?</h3>
+                        <button class="modal__close modal__close--book">Закрыть</button>
+                    </div>
+                    <p class="modal__text">Пожалуйста, заполните форму,<br>и мы вам перезвоним</p>
+                </div>
             </div>
         </section>
         <section class="specialization">
@@ -287,7 +301,7 @@
                         <input type="text" name="code" id="code-2" class="help__code" placeholder="Промокод на скидку">
                         <button type="submit" class="help__btn">Забронировать!</button>
                     </form>
-                    <a href="" class="help__policy">Политика конфиденциальности</a>
+                    <a href="policy.html" class="help__policy">Политика конфиденциальности</a>
                 </div>
             </div>
         </section>
@@ -473,8 +487,22 @@
                 </tr>
             </table>
             <div class="price__buttons">
-                <a href="" class="btn btn--red price__link">Оставить заявку!</a>
-                <a href="" class="btn btn--red price__link">Оставить заявку!</a>
+                <a href="#price-btn" class="btn btn--red price__link">Оставить заявку!</a>
+                <div class="modal modal--price" id="price-btn">
+                    <div class="modal__header">
+                        <h3 class="modal__title">Как забронировать номер?</h3>
+                        <button class="modal__close modal__close--price">Закрыть</button>
+                    </div>
+                    <p class="modal__text">Пожалуйста, заполните форму,<br>и мы вам перезвоним</p>
+                </div>
+                <a href="#price-btn2" class="btn btn--red price__link price__link--2">Оставить заявку!</a>
+                <div class="modal modal--price2" id="price-btn2">
+                    <div class="modal__header">
+                        <h3 class="modal__title">Как забронировать номер?</h3>
+                        <button class="modal__close modal__close--price2">Закрыть</button>
+                    </div>
+                    <p class="modal__text">Пожалуйста, заполните форму,<br>и мы вам перезвоним</p>
+                </div>
             </div>
             <p class="price__comment">*В рамках программы отмена или замена процедур возможна только по показаниям или по согласованию с врачом.</p>
         </section>
@@ -522,7 +550,7 @@
                         <input type="text" name="code" id="code-3" class="help__code" placeholder="Промокод на скидку">
                         <button type="submit" class="help__btn">Получить рекомендацию!</button>
                     </form>
-                    <a href="" class="help__policy">Политика конфиденциальности</a>
+                    <a href="policy.html" class="help__policy">Политика конфиденциальности</a>
                 </div>            
                 <div class="timer__count">
                     <p class="timer__title">Только сегодня! Скидка -20%</p>
@@ -598,7 +626,14 @@
                             <li class="rooms__item">Сейф</li>
                             <li class="rooms__item">Ванная с душем / ванной</li>
                         </ul>
-                        <a href="#" class="btn btn--red rooms__btn">Забронировать!</a>
+                        <a href="#room1" class="btn btn--red rooms__btn">Забронировать!</a>
+                        <div class="modal modal--room1" id="room1">
+                            <div class="modal__header">
+                                <h3 class="modal__title">Как забронировать номер?</h3>
+                                <button class="modal__close modal__close--room1">Закрыть</button>
+                            </div>
+                            <p class="modal__text">Пожалуйста, заполните форму,<br>и мы вам перезвоним</p>
+                        </div>
                     </div>
                 </div>
                 <div class="rooms__block">
@@ -625,7 +660,14 @@
                             <li class="rooms__item">Сейф</li>
                             <li class="rooms__item">Ванная с душем / ванной</li>
                         </ul>
-                        <a href="#" class="btn btn--red rooms__btn">Забронировать!</a>
+                        <a href="#room2" class="btn btn--red rooms__btn rooms__btn--2">Забронировать!</a>
+                        <div class="modal modal--room2" id="room2">
+                            <div class="modal__header">
+                                <h3 class="modal__title">Как забронировать номер?</h3>
+                                <button class="modal__close modal__close--room2">Закрыть</button>
+                            </div>
+                            <p class="modal__text">Пожалуйста, заполните форму,<br>и мы вам перезвоним</p>
+                        </div>
                     </div>                    
                 </div>
             </div>
@@ -656,15 +698,14 @@
                 </div>
                 <div class="help__wrap help__wrap--timer">
                     <p class="help__title help__title--economy">Экономьте сегодня!</p>
-                    <p class="help__text help__text--economy {
-    ">оставьте заявку сегодня и получите скидку на проживание в номере <span>-20%</span></p>
+                    <p class="help__text help__text--economy">оставьте заявку сегодня и получите скидку на проживание в номере <span>-20%</span></p>
                     <form action="#" class="help__form">
                         <input type="text" name="name" id="name-4" class="help__name" placeholder="Имя *" required>
                         <input type="tel" name="phone" id="phone-4" class="help__phone" placeholder="Телефон *" required>
                         <input type="text" name="code" id="code-4" class="help__code" placeholder="Промокод на скидку">
                         <button type="submit" class="help__btn">Получить рекомендацию!</button>
                     </form>
-                    <a href="" class="help__policy">Политика конфиденциальности</a>
+                    <a href="policy.html" class="help__policy">Политика конфиденциальности</a>
                 </div>  
             </div>          
         </section>
@@ -764,7 +805,14 @@
                     <p class="benefits__text">Кедровая мини-сауна – отличная профилактика заболеваний и мощный заряд бодрости!</p>
                 </li>
             </ul>
-            <a href="#video" class="btn btn--green benefits__btn">Забронировать номер!</a>
+            <a href="#book2" class="btn btn--green benefits__btn benefits__btn--book2">Забронировать номер!</a>
+            <div class="modal modal--book2" id="book2">
+                <div class="modal__header">
+                    <h3 class="modal__title">Как забронировать номер?</h3>
+                    <button class="modal__close modal__close--book2">Закрыть</button>
+                </div>
+                <p class="modal__text">Пожалуйста, заполните форму,<br>и мы вам перезвоним</p>
+            </div>
         </section>
         <section class="tour">
             <h2 class="title-h2">Выездные экскурсии</h2>
@@ -801,7 +849,14 @@
                     <iframe class="response__video" width="440" height="246" src="https://www.youtube.com/embed/lZgNJHrYHsU" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
-            <a href="#" class="btn btn--red response__link">Забронировать номер!</a>
+            <a href="#book3" class="btn btn--red response__link">Забронировать номер!</a>
+            <div class="modal modal--book3" id="book3">
+                <div class="modal__header">
+                    <h3 class="modal__title">Как забронировать номер?</h3>
+                    <button class="modal__close modal__close--book3">Закрыть</button>
+                </div>
+                <p class="modal__text">Пожалуйста, заполните форму,<br>и мы вам перезвоним</p>
+            </div>
         </section>
         <section class="certify">
             <h2 class="title-h2">Наш опыт подтвержден лицензиями и сертификатами!</h2>
@@ -882,7 +937,7 @@
                         <input type="text" name="code" id="code-5" class="help__code" placeholder="Промокод на скидку">
                         <button type="submit" class="help__btn">Получить рекомендацию!</button>
                     </form>
-                    <a href="" class="help__policy">Политика конфиденциальности</a>
+                    <a href="policy.html" class="help__policy">Политика конфиденциальности</a>
                 </div>
             </div>
         </section>
@@ -910,6 +965,13 @@
     </main>
     
     <footer class="footer-main">
+        <div class="modal modal--phone" id="phone">
+            <div class="modal__header">
+                <h3 class="modal__title">Как забронировать номер?</h3>
+                <button class="modal__close modal__close--phone">Закрыть</button>
+            </div>
+            <p class="modal__text">Пожалуйста, заполните форму,<br>и мы вам перезвоним</p>
+        </div>
         <nav class="menu menu--closed">
             <button class="menu__toggle"></button>
             <ul class="menu__items">
@@ -929,7 +991,7 @@
                 <a href="tel: +7%20(918)%20252-80-88" class="user-block__phone">+7 (918) 252-80-88</a>
                 <a href="+7%20(928)%20210-02-17" class="user-block__phone">+7 (861) 290-02-17</a>
             </div>
-            <a href="#" class="btn btn--red footer-main__link">Заказать звонок</a>
+            <a href="#phone" class="btn btn--red footer-main__link">Заказать звонок</a>
             <a href="https://contextgen.ru" class="user-block__context">
                 <img src="img/logo-contextgen.png" alt="contextgen.ru" class="user-block__img" width="180" height="37">
                 <p class="user-block__text">- сделано с умом</p>
