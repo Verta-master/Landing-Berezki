@@ -561,6 +561,7 @@ textarea {
   text-decoration: none;
   color: #fff;
   border-radius: 50px;
+  box-shadow: 0px 3px 7px 0px rgba(23, 45, 69, 0.3);
 }
 .btn:hover {
   opacity: 0.8;
@@ -766,6 +767,7 @@ textarea {
   box-sizing: border-box;
   background-color: #f8ea12;
   background-image: linear-gradient(to bottom, #dcd335, #f5ec4e);
+  box-shadow: 0px 3px 7px 0px rgba(23, 45, 69, 0.3);
 }
 .help__btn:hover {
   opacity: 0.8;
@@ -1010,6 +1012,9 @@ textarea {
   background-size: cover;
   padding-bottom: 45px;
 }
+.reviews input {
+  display: none;
+}
 .reviews__wrap {
   width: 320px;
   margin: 0 auto;
@@ -1111,14 +1116,19 @@ textarea {
 .slider__btn--active {
   background-color: #31aa67;
 }
-.slide-1,
-.slide-2,
-.slide-3 {
+.slide {
   display: none;
 }
-.slide-active {
+.btn_1:checked ~ .reviews__wrap .slide1,
+.btn_2:checked ~ .reviews__wrap .slide2,
+.btn_3:checked ~ .reviews__wrap .slide3 {
   display: -ms-flexbox;
   display: flex;
+}
+.btn_1:checked ~ .reviews__wrap label[for="btn-1"],
+.btn_2:checked ~ .reviews__wrap label[for="btn-2"],
+.btn_3:checked ~ .reviews__wrap label[for="btn-3"] {
+  background-color: #31aa67;
 }
 .specialization {
   background-color: #000;
@@ -1942,7 +1952,7 @@ textarea {
         flex-grow: 1;
   }
   .menu__block:hover,
-  .menu__block .active {
+  .menu__block.active {
     background-color: #4cbf80;
   }
   .menu__toggle {
@@ -2438,9 +2448,7 @@ textarea {
     line-height: 23px;
     margin-bottom: 25px;
   }
-  .slide-1,
-  .slide-2,
-  .slide-3 {
+  .slide {
     display: -ms-flexbox;
     display: flex;
   }
@@ -2553,6 +2561,21 @@ textarea {
   .timer--mobile .timer__count {
     -ms-flex-order: 2;
         order: 2;
+  }
+  .timer--bg2 {
+    background-image: url(../img/screen-7.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .timer--bg3 {
+    background-image: url(../img/screen-9.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .timer--bg4 {
+    background-image: url(../img/screen-8.jpg);
+    background-size: cover;
+    background-position: center;
   }
   .timer__wrap {
     display: -ms-flexbox;
