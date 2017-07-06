@@ -1,0 +1,72 @@
+.modal {
+    display: none;
+    position: absolute;
+    width: 600px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+    z-index: 15;
+    left: 50%;
+    transform: translate(-300px,0);
+}
+
+.modal__header {
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid #d2dff6;
+}
+
+.modal__close {
+    margin-left: auto;
+    font-size: 0;
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    background-image: url(../img/icon-cross.svg);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.modal__title {
+    margin: 0;
+    color: #172d45;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.modal--tour,
+.modal--video {
+    display: none;
+    width: 320px;
+    left: 92%;
+    
+    iframe {
+        margin-top: 10px;
+        width: 300px;
+        height: 160px;
+    }
+}
+
+.modal__show {
+    display: block;
+}
+
+//----------------DESKTOP---------------
+
+@media @desktop {
+    .modal--tour,
+    .modal--video {
+        width: 660px;
+        left: 50%;
+        transform: translateX(-325px);
+    
+        iframe {
+            width: 640px;
+            height: 360px;
+        }
+    }
+}
