@@ -12,9 +12,9 @@
         <div class="header-main__wrap">
             <div class="user-block">
                 <img src="img/logo.png" alt="Логотип" class="logo" width="105" height="40">
-                <div class="user-block__phone">+7 (918) 252-80-88</div>
-                <div class="user-block__phone">+7 (928) 210-02-17</div>
-                <div class="user-block__phone">+7 (861) 290-02-17</div>
+                <a href="tel: +7%20(918)%20252-80-88" class="user-block__phone">+7 (918) 252-80-88</a>
+                <a href="+7%20(928)%20210-02-17" class="user-block__phone">+7 (928) 210-02-17</a>
+                <a href="+7%20(861)%20290-02-17" class="user-block__phone">+7 (861) 290-02-17</a>
             </div>
             <nav class="menu menu--closed menu--nojs">
                 <button class="menu__toggle"></button>
@@ -27,9 +27,9 @@
                     <li class="menu__block"><a href="#courses" class="menu__link">Процедуры</a></li>
                     <li class="menu__block"><a href="#action" class="menu__link">Акция</a></li>
                     <li class="menu__block"><a href="#social" class="menu__link">Мы в сетях</a></li>
-                    <li class="menu__block menu__block--phone">+7 (918) 252-80-88</li>
-                    <li class="menu__block menu__block--phone">+7 (928) 210-02-17</li>
-                    <li class="menu__block menu__block--phone">+7 (861) 290-02-17</li>
+                    <li class="menu__block menu__block--phone"><a href="tel: +7%20(918)%20252-80-88">+7 (918) 252-80-88</a></li>
+                    <li class="menu__block menu__block--phone"><a href="+7%20(928)%20210-02-17">+7 (928) 210-02-17</a></li>
+                    <li class="menu__block menu__block--phone"><a href="+7%20(861)%20290-02-17">+7 (861) 290-02-17</a></li>
                 </ul>
             </nav>
         </div>
@@ -41,7 +41,14 @@
                 <h1 class="promo__h1">ЛЕЧЕБНОЕ ГОЛОДАНИЕ</h1>
                 <p class="promo__text"><span>ПОД НАБЛЮДЕНИЕМ</span> <strong>команды специалистов</strong> в предгорном эко-санатории "Березки"</p>
                 <p class="promo__text">п.Псебай Краснодарский край</p>
-                <a href="#video" class="btn btn--red promo__link">СМОТРЕТЬ 3D-ТУР ПО САНАТОРИЮ</a>
+                <a href="#promo__tour" class="btn btn--red promo__link">СМОТРЕТЬ 3D-ТУР ПО САНАТОРИЮ</a>
+                <div class="modal modal--tour">
+                    <div class="modal__header">
+                        <h3 class="modal__title">Санаторий природной медицины "Берёзки"</h3>
+                        <button class="modal__close modal__close--tour">Закрыть</button>
+                    </div>
+                    <iframe width="300" height="160" src="https://www.youtube.com/embed/YDPY4bRvN7Y" allowfullscreen></iframe>
+                </div>
             </div>
         </section>
         <section class="benefits" id="method">
@@ -83,7 +90,14 @@
                     <p class="benefits__text">Снижение веса на 10 и более килограмм*<span>*Ваши результаты могут отличаться от заявленных</span></p>
                 </li>
             </ul>
-            <a href="#video" class="btn btn--green benefits__btn benefits__btn--up">СМОТРЕТЬ ВИДЕО О САНАТОРИИ</a>
+            <a href="#modal__video" class="btn btn--green benefits__btn benefits__btn--up">СМОТРЕТЬ ВИДЕО О САНАТОРИИ</a>
+            <div class="modal modal--video">
+                <div class="modal__header">
+                    <h3 class="modal__title">Видео о санатории "Березки"</h3>
+                    <button class="modal__close modal__close--video">Закрыть</button>
+                </div>
+                <iframe width="300" height="160" src="https://www.youtube.com/embed/32McKNUr1FI" allowfullscreen></iframe>
+            </div>
         </section>
         <section class="help help--single">
             <div class="help__wrap">
@@ -110,13 +124,12 @@
                 <p class="recept__slogan">Лечебное голодание + пешие прогулки в горы и спа процедуры <strong>дают лучший эффект</strong></p>
             </div>
         </section>
-        <section class="video">
+        <section class="video" id="video">
             <div class="video__block">
                 <h2 class="title-h2">Ролик об истории метода лечебного голодания</h2>
-                <picture>
-                    <source media="(min-width: 960px)" srcset="img/video.jpg">
-                    <img src="img/video-mobile.jpg" srcset="img/video-mobile.jpg" alt="Лечебное голодание" width="300" height="170">
-                </picture>
+                <div class="video__frame">
+                    <iframe width="300" height="170" src="https://www.youtube.com/embed/pkU_4XAxiaw" allowfullscreen></iframe>
+                </div>
             </div>
         </section>
         <section class="indication">
@@ -780,24 +793,59 @@
                 <div class="response__item">
                     <p class="response__name">ГОЛТИС</p>
                     <p class="response__job">эксперт и консультант по здоровому образу жизни, автор методики «Исцеляющий Импульс»</p>
-                    <img src="img/review-1.jpg" alt="" class="response__video" width="438" height="246">
+                    <iframe class="response__video" width="440" height="246" src="https://www.youtube.com/embed/1yUwfAVNNC0" allowfullscreen></iframe>
                 </div>
                 <div class="response__item">
                     <p class="response__name">ЕЛЕНА КОРСУН</p>
                     <p class="response__job">Врач-фитотерапевт, доцент кафедры фитотерапии в РУДН, доктор медицинских наук</p>
-                    <img src="img/review-2.jpg" alt="" class="response__video" width="440" height="246">
+                    <iframe class="response__video" width="440" height="246" src="https://www.youtube.com/embed/lZgNJHrYHsU" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
             <a href="#" class="btn btn--red response__link">Забронировать номер!</a>
         </section>
         <section class="certify">
             <h2 class="title-h2">Наш опыт подтвержден лицензиями и сертификатами!</h2>
+            <div class="modal modal--s1">
+                <div class="modal__header">
+                    <h3 class="modal__title">Лицензия</h3>
+                    <button class="modal__close modal__close--s1">Закрыть</button>
+                </div>
+                <img src="img/certificate-1.jpg" alt="Лицензия" width="600" height="864">
+            </div>
+            <div class="modal modal--s2">
+                <div class="modal__header">
+                    <h3 class="modal__title">Лицензия</h3>
+                    <button class="modal__close modal__close--s2">Закрыть</button>
+                </div>
+                <img src="img/certificate-2.jpg" alt="Лицензия" width="600" height="864">
+            </div>
+            <div class="modal modal--s3">
+                <div class="modal__header">
+                    <h3 class="modal__title">Приложение к лицензии</h3>
+                    <button class="modal__close modal__close--s3">Закрыть</button>
+                </div>
+                <img src="img/certificate-3.jpg" alt="Приложение к лицензии" width="600" height="864">
+            </div>
+            <div class="modal modal--s4">
+                <div class="modal__header">
+                    <h3 class="modal__title">Приложение к лицензии</h3>
+                    <button class="modal__close modal__close--s4">Закрыть</button>
+                </div>
+                <img src="img/certificate-4.jpg" alt="Приложение к лицензии" width="600" height="864">
+            </div>
+            <div class="modal modal--s5">
+                <div class="modal__header">
+                    <h3 class="modal__title">Лицензия</h3>
+                    <button class="modal__close modal__close--s5">Закрыть</button>
+                </div>
+                <img src="img/certificate-5.jpg" alt="Лицензия" width="600" height="864">
+            </div>
             <div class="certify__block">
-                <img src="img/certificate-1-small.jpg" alt="certificate" class="certify__img" width="160" height="230">
-                <img src="img/certificate-2-small.jpg" alt="certificate" class="certify__img" width="160" height="230">
-                <img src="img/certificate-3-small.jpg" alt="certificate" class="certify__img" width="160" height="230">
-                <img src="img/certificate-4-small.jpg" alt="certificate" class="certify__img" width="160" height="230">
-                <img src="img/certificate-5-small.jpg" alt="certificate" class="certify__img" width="160" height="230">
+                <img src="img/certificate-1-small.jpg" alt="certificate" class="certify__img certify__img--s1" width="302" height="434">
+                <img src="img/certificate-2-small.jpg" alt="certificate" class="certify__img certify__img--s2" width="307" height="440">
+                <img src="img/certificate-3-small.jpg" alt="certificate" class="certify__img certify__img--s3" width="301" height="433">
+                <img src="img/certificate-4-small.jpg" alt="certificate" class="certify__img certify__img--s4" width="400" height="580">
+                <img src="img/certificate-5-small.jpg" alt="certificate" class="certify__img certify__img--s5" width="400" height="574">
             </div>
         </section>
         <section class="timer">
@@ -878,8 +926,8 @@
         <div class="user-block">
             <img src="img/logo.png" alt="Логотип" class="logo" width="105" height="40">
             <div class="user-block__contact">
-                <div class="user-block__phone">+7 (918) 252-80-88</div>
-                <div class="user-block__phone">+7 (861) 290-02-17</div>
+                <a href="tel: +7%20(918)%20252-80-88" class="user-block__phone">+7 (918) 252-80-88</a>
+                <a href="+7%20(928)%20210-02-17" class="user-block__phone">+7 (861) 290-02-17</a>
             </div>
             <a href="#" class="btn btn--red footer-main__link">Заказать звонок</a>
             <a href="https://contextgen.ru" class="user-block__context">
@@ -889,7 +937,6 @@
         </div>
     </footer>
     
-    <script src="js/picturefill.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
