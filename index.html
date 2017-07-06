@@ -170,7 +170,6 @@
                         <h3 class="modal__title">Как получить консультацию?</h3>
                         <button class="modal__close modal__close--consult">Закрыть</button>
                     </div>
-                    <p class="modal__text">Пожалуйста, заполните форму,<br>и мы вам перезвоним</p>
                     <div class="help__wrap help__wrap--modal">
                         <p class="help__title help__title--economy">Экономьте сегодня!</p>
                         <p class="help__text help__text--economy">оставьте заявку сегодня и получите скидку на проживание в номере <span>-20%</span></p>
@@ -228,7 +227,6 @@
                         <h3 class="modal__title">Как забронировать номер?</h3>
                         <button class="modal__close modal__close--book">Закрыть</button>
                     </div>
-                    <p class="modal__text">Пожалуйста, заполните форму,<br>и мы вам перезвоним</p>
                     <div class="help__wrap help__wrap--modal">
                         <p class="help__title help__title--economy">Экономьте сегодня!</p>
                         <p class="help__text help__text--economy">оставьте заявку сегодня и получите скидку на проживание в номере <span>-20%</span></p>
@@ -514,7 +512,6 @@
                         <h3 class="modal__title">Как забронировать номер?</h3>
                         <button class="modal__close modal__close--price">Закрыть</button>
                     </div>
-                    <p class="modal__text">Пожалуйста, заполните форму,<br>и мы вам перезвоним</p>
                     <div class="help__wrap help__wrap--modal">
                         <p class="help__title help__title--economy">Экономьте сегодня!</p>
                         <p class="help__text help__text--economy">оставьте заявку сегодня и получите скидку на проживание в номере <span>-20%</span></p>
@@ -532,7 +529,6 @@
                         <h3 class="modal__title">Как забронировать номер?</h3>
                         <button class="modal__close modal__close--price2">Закрыть</button>
                     </div>
-                    <p class="modal__text">Пожалуйста, заполните форму,<br>и мы вам перезвоним</p>
                     <div class="help__wrap help__wrap--modal">
                         <p class="help__title help__title--economy">Экономьте сегодня!</p>
                         <p class="help__text help__text--economy">оставьте заявку сегодня и получите скидку на проживание в номере <span>-20%</span></p>
@@ -673,7 +669,6 @@
                                 <h3 class="modal__title">Как забронировать номер?</h3>
                                 <button class="modal__close modal__close--room1">Закрыть</button>
                             </div>
-                            <p class="modal__text">Пожалуйста, заполните форму,<br>и мы вам перезвоним</p>
                             <div class="help__wrap help__wrap--modal">
                                 <p class="help__title help__title--economy">Экономьте сегодня!</p>
                                 <p class="help__text help__text--economy">оставьте заявку сегодня и получите скидку на проживание в номере <span>-20%</span></p>
@@ -718,7 +713,6 @@
                                 <h3 class="modal__title">Как забронировать номер?</h3>
                                 <button class="modal__close modal__close--room2">Закрыть</button>
                             </div>
-                            <p class="modal__text">Пожалуйста, заполните форму,<br>и мы вам перезвоним</p>
                             <div class="help__wrap help__wrap--modal">
                                 <p class="help__title help__title--economy">Экономьте сегодня!</p>
                                 <p class="help__text help__text--economy">оставьте заявку сегодня и получите скидку на проживание в номере <span>-20%</span></p>
@@ -872,7 +866,6 @@
                     <h3 class="modal__title">Как забронировать номер?</h3>
                     <button class="modal__close modal__close--book2">Закрыть</button>
                 </div>
-                <p class="modal__text">Пожалуйста, заполните форму,<br>и мы вам перезвоним</p>
                 <div class="help__wrap help__wrap--modal">
                     <p class="help__title help__title--economy">Экономьте сегодня!</p>
                     <p class="help__text help__text--economy">оставьте заявку сегодня и получите скидку на проживание в номере <span>-20%</span></p>
@@ -926,7 +919,6 @@
                     <h3 class="modal__title">Как забронировать номер?</h3>
                     <button class="modal__close modal__close--book3">Закрыть</button>
                 </div>
-                <p class="modal__text">Пожалуйста, заполните форму,<br>и мы вам перезвоним</p>
                 <div class="help__wrap help__wrap--modal">
                     <p class="help__title help__title--economy">Экономьте сегодня!</p>
                     <p class="help__text help__text--economy">оставьте заявку сегодня и получите скидку на проживание в номере <span>-20%</span></p>
@@ -1050,7 +1042,6 @@
                 <h3 class="modal__title">Как забронировать номер?</h3>
                 <button class="modal__close modal__close--phone">Закрыть</button>
             </div>
-            <p class="modal__text">Пожалуйста, заполните форму,<br>и мы вам перезвоним</p>
             <div class="help__wrap help__wrap--modal">
                 <p class="help__title help__title--economy">Экономьте сегодня!</p>
                 <p class="help__text help__text--economy">оставьте заявку сегодня и получите скидку на проживание в номере <span>-20%</span></p>
@@ -1088,8 +1079,23 @@
             </a>
         </div>
     </footer>
+    <div class="modal-overlay"></div>
     
     <script src="js/jquery-3.2.1.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $(".btn").click(function(){
+            $(".modal-overlay").show();
+        });
+        $(".certify__img").click(function(){
+            $(".modal-overlay").show();
+        });
+        $(".modal__close").click(function(){
+            $(".modal-overlay").hide();
+        });
+    });
+    </script>
+   
     <script src="js/fotorama.js"></script>
     <script src="js/script.min.js"></script>
 </body>

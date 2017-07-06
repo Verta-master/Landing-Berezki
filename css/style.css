@@ -1856,11 +1856,24 @@ textarea {
   padding: 10px;
   box-sizing: border-box;
   background-color: #fff;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
-  z-index: 15;
+  z-index: 150;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.modal-overlay {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.modal-overlay-show {
+  display: block;
 }
 .certificate {
   display: none;
@@ -1871,7 +1884,7 @@ textarea {
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
-  z-index: 15;
+  z-index: 150;
   left: 50%;
   transform: translate(-50%, 0);
 }
@@ -1879,7 +1892,6 @@ textarea {
   display: -ms-flexbox;
   display: flex;
   padding: 10px;
-  border-bottom: 1px solid #d2dff6;
 }
 .modal__close {
   margin-left: auto;
@@ -1919,7 +1931,10 @@ textarea {
 .modal--book2,
 .modal--book3,
 .modal--phone {
-  width: 300px;
+  width: 280px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
 }
 .modal__text {
   font-size: 16px;
@@ -3808,7 +3823,7 @@ textarea {
   .modal--book2,
   .modal--book3,
   .modal--phone {
-    width: 400px;
+    width: 355px;
   }
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
