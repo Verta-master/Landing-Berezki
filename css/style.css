@@ -696,6 +696,9 @@ textarea {
   margin: 0 auto;
   border-radius: 10px;
 }
+.help__wrap--modal {
+  width: 280px;
+}
 .help__title {
   font-size: 30px;
   line-height: 30px;
@@ -1012,7 +1015,7 @@ textarea {
   background-size: cover;
   padding-bottom: 45px;
 }
-.reviews input {
+.reviews input[type="radio"] {
   display: none;
 }
 .reviews__wrap {
@@ -1645,12 +1648,19 @@ textarea {
 .rooms__block:nth-of-type(2) {
   padding-top: 30px;
 }
+.rooms__img {
+  width: 300px;
+  height: 300px;
+}
 .rooms__small {
   width: 70px;
   height: 45px;
   cursor: pointer;
 }
 .rooms__gallery {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   margin: 0 auto;
   font-size: 0;
   display: -ms-flexbox;
@@ -1840,8 +1850,9 @@ textarea {
 }
 .modal {
   display: none;
-  position: absolute;
-  width: 600px;
+  position: fixed;
+  top: 50%;
+  width: 300px;
   padding: 10px;
   box-sizing: border-box;
   background-color: #fff;
@@ -1849,7 +1860,20 @@ textarea {
   box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
   z-index: 15;
   left: 50%;
-  transform: translate(-300px, 0);
+  transform: translate(-50%, -50%);
+}
+.certificate {
+  display: none;
+  position: absolute;
+  width: 300px;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+  z-index: 15;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 .modal__header {
   display: -ms-flexbox;
@@ -1879,7 +1903,6 @@ textarea {
 .modal--video {
   display: none;
   width: 320px;
-  left: 92%;
 }
 .modal--tour iframe,
 .modal--video iframe {
@@ -1897,12 +1920,10 @@ textarea {
 .modal--book3,
 .modal--phone {
   width: 300px;
-  left: 50%;
-  transform: translateX(-150px);
 }
 .modal__text {
   font-size: 16px;
-  line-height: 36px;
+  line-height: 26px;
   text-align: center;
   font-weight: 500;
 }
@@ -2143,7 +2164,8 @@ textarea {
     position: relative;
   }
   .help--single .help__form input {
-    width: 32%;
+    width: 45%;
+    margin-bottom: 20px;
   }
   .help--single .help__form:before {
     content: "";
@@ -2179,6 +2201,10 @@ textarea {
   .help__wrap--timer {
     width: 355px;
     margin: 0 60px;
+  }
+  .help__wrap--modal {
+    width: 355px;
+    margin: 0 auto;
   }
   .recept__wrap {
     width: 960px;
@@ -2888,6 +2914,10 @@ textarea {
     padding-top: 35px;
     padding-bottom: 28px;
   }
+  .rooms__img {
+    width: 546px;
+    height: auto;
+  }
   .rooms__large {
     width: 546px;
     height: 339px;
@@ -3012,6 +3042,7 @@ textarea {
   }
   .certify {
     display: block;
+    position: relative;
   }
   .certify__block {
     display: -ms-flexbox;
@@ -3129,11 +3160,13 @@ textarea {
     margin-left: 10px;
     margin-top: 0;
   }
+  .modal,
+  .certificate {
+    width: 600px;
+  }
   .modal--tour,
   .modal--video {
     width: 660px;
-    left: 50%;
-    transform: translateX(-325px);
   }
   .modal--tour iframe,
   .modal--video iframe {
@@ -3150,7 +3183,5 @@ textarea {
   .modal--book3,
   .modal--phone {
     width: 400px;
-    left: 50%;
-    transform: translateX(-200px);
   }
 }
