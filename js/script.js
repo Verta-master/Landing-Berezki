@@ -242,3 +242,5 @@ close16.addEventListener("click", function(event) {
   event.preventDefault();
   popup16.classList.remove("modal__show");
 });
+
+

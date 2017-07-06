@@ -21,22 +21,29 @@
     }
 }
 
-.slide-1,
-.slide-2,
-.slide-3 {
+.slide {
     display: none;
 }
 
-.slide-active {
-    display: flex;
+.btn_1:checked ~ .reviews__wrap .slide1,
+.btn_2:checked ~ .reviews__wrap .slide2,
+.btn_3:checked ~ .reviews__wrap .slide3
+{
+  display: flex;
 }
+
+.btn_1:checked ~ .reviews__wrap label[for="btn-1"],
+.btn_2:checked ~ .reviews__wrap label[for="btn-2"],
+.btn_3:checked ~ .reviews__wrap label[for="btn-3"]
+{
+  background-color: @green;
+}
+
 
 //----------------DESKTOP---------------
 
 @media @desktop {
-    .slide-1,
-    .slide-2,
-    .slide-3 {
+    .slide {
         display: flex;
     }
     

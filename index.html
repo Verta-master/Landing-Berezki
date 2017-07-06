@@ -176,11 +176,14 @@
             </div>
         </section>
         <section class="reviews" id="reviews">
+            <input type="radio" id="btn-1" name="toggle" class="btn_1" checked>
+            <input type="radio" id="btn-2" name="toggle" class="btn_2">
+            <input type="radio" id="btn-3" name="toggle" class="btn_3">
             <div class="reviews__wrap">
                 <h2 class="reviews__title">Отзывы наших гостей</h2>
                 <p class="reviews__subtitle">о лечебном голодании</p>
                 <ul class="reviews__list">
-                    <li class="reviews__item slide-1 slide-active">
+                    <li class="reviews__item slide slide1 slide-active">
                         <img src="img/response-1.jpg" alt="Отзыв" class="reviews__img" width="151" height="151">
                         <div class="reviews__block">
                             <p class="reviews__name">Владимир. Курс голодания по методике Ю.Николаева - 7 дней</p>
@@ -188,7 +191,7 @@
                             <p class="reviews__comment">*Ваши результаты могут отличаться от заявленных.</p>
                         </div>
                     </li>
-                    <li class="reviews__item slide-2">
+                    <li class="reviews__item slide slide2">
                         <img src="img/response-2.jpg" alt="Отзыв" class="reviews__img" width="151" height="151">
                         <div class="reviews__block">
                             <p class="reviews__name">Анна. Курс голодания по рецепту фитосбора М.Оганян - 14 дней</p>
@@ -196,7 +199,7 @@
                             <p class="reviews__comment">*Ваши результаты могут отличаться от заявленных.</p>
                         </div>                    
                     </li>
-                    <li class="reviews__item slide-3">
+                    <li class="reviews__item slide slide3">
                         <img src="img/response-3.jpg" alt="Отзыв" class="reviews__img" width="151" height="151">
                         <div class="reviews__block">
                             <p class="reviews__name">Наталья. Курс голодания по рецепту фитосбора М.Оганян - 21 день</p>
@@ -206,9 +209,9 @@
                     </li>
                 </ul>
                 <div class="slider">
-                    <div class="slider__btn slide__btn-1 slider__btn--active">Отзыв 1</div>
-                    <div class="slider__btn slide__btn-2">Отзыв 2</div>
-                    <div class="slider__btn slide__btn-3">Отзыв 3</div>
+                  <label for="btn-1" class="slider__btn"></label>
+                  <label for="btn-2" class="slider__btn"></label>
+                  <label for="btn-3" class="slider__btn"></label>
                 </div>
                 <a href="#book" class="btn btn--red reviews__link btn--book">Забронировать номер!</a>
                 <div class="modal modal--book" id="book">
@@ -539,7 +542,7 @@
                 <li class="additions__item additions__item--plus"><span>ЗДОРОВЬЕ И ДОЛГОЛЕТИЕ</span>При выполнении всех рекомендаций врача</li>
             </ul>
         </section>
-        <section class="timer timer--mobile">
+        <section class="timer timer--mobile timer--bg2">
             <div class="timer__wrap">
                 <div class="help__wrap help__wrap--timer">
                     <p class="help__title">Экономьте сегодня!</p>
@@ -672,7 +675,7 @@
                 </div>
             </div>
         </section>
-        <section class="timer" id="action">
+        <section class="timer timer--bg3" id="action">
             <div class="timer__wrap">
                 <div class="timer__count">
                     <p class="timer__title">Только сегодня! Скидка -20%</p>
@@ -903,7 +906,7 @@
                 <img src="img/certificate-5-small.jpg" alt="certificate" class="certify__img certify__img--s5" width="400" height="574">
             </div>
         </section>
-        <section class="timer">
+        <section class="timer timer--bg4">
             <div class="timer__wrap">
                 <div class="timer__count">
                     <p class="timer__title">Только сегодня! Скидка -20%</p>
@@ -999,6 +1002,6 @@
         </div>
     </footer>
     
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
 </body>
 </html>
