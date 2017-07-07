@@ -1915,8 +1915,8 @@ textarea {
 .modal__close--book3,
 .modal__close--phone {
   position: absolute;
-  right: 10px;
-  top: 10px;
+  right: 5px;
+  top: 5px;
   background-image: url(../img/icon-cross-white.svg);
 }
 .modal__title {
