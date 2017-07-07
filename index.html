@@ -6,6 +6,7 @@
     <title>Березки - лечебное голодание</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css" type="text/css" media="screen">
 </head>
 <body>
     <header class="header-main">
@@ -909,47 +910,12 @@
         </section>
         <section class="certify">
             <h2 class="title-h2">Наш опыт подтвержден лицензиями и сертификатами!</h2>
-            <div class="modal modal--s1 certificate">
-                <div class="modal__header">
-                    <h3 class="modal__title">Лицензия</h3>
-                    <button class="modal__close modal__close--s1">Закрыть</button>
-                </div>
-                <img src="img/certificate-1.jpg" alt="Лицензия" width="600" height="864">
-            </div>
-            <div class="modal modal--s2 certificate">
-                <div class="modal__header">
-                    <h3 class="modal__title">Лицензия</h3>
-                    <button class="modal__close modal__close--s2">Закрыть</button>
-                </div>
-                <img src="img/certificate-2.jpg" alt="Лицензия" width="600" height="864">
-            </div>
-            <div class="modal modal--s3 certificate">
-                <div class="modal__header">
-                    <h3 class="modal__title">Приложение к лицензии</h3>
-                    <button class="modal__close modal__close--s3">Закрыть</button>
-                </div>
-                <img src="img/certificate-3.jpg" alt="Приложение к лицензии" width="600" height="864">
-            </div>
-            <div class="modal modal--s4 certificate">
-                <div class="modal__header">
-                    <h3 class="modal__title">Приложение к лицензии</h3>
-                    <button class="modal__close modal__close--s4">Закрыть</button>
-                </div>
-                <img src="img/certificate-4.jpg" alt="Приложение к лицензии" width="600" height="864">
-            </div>
-            <div class="modal modal--s5 certificate">
-                <div class="modal__header">
-                    <h3 class="modal__title">Лицензия</h3>
-                    <button class="modal__close modal__close--s5">Закрыть</button>
-                </div>
-                <img src="img/certificate-5.jpg" alt="Лицензия" width="600" height="864">
-            </div>
             <div class="certify__block">
-                <img src="img/certificate-1-small.jpg" alt="certificate" class="certify__img certify__img--s1" width="302" height="434">
-                <img src="img/certificate-2-small.jpg" alt="certificate" class="certify__img certify__img--s2" width="307" height="440">
-                <img src="img/certificate-3-small.jpg" alt="certificate" class="certify__img certify__img--s3" width="301" height="433">
-                <img src="img/certificate-4-small.jpg" alt="certificate" class="certify__img certify__img--s4" width="400" height="580">
-                <img src="img/certificate-5-small.jpg" alt="certificate" class="certify__img certify__img--s5" width="400" height="574">
+                <a class="fancybox certify__img certify__img--s1" rel="group" href="img/certificate-1.jpg"><img src="img/certificate-1-small.jpg" alt="Лицензия" width="302" height="434"></a>
+                <a class="fancybox certify__img certify__img--s2" rel="group" href="img/certificate-2.jpg"><img src="img/certificate-2-small.jpg" alt="Лицензия" width="302" height="434"></a>
+                <a class="fancybox certify__img certify__img--s3" rel="group" href="img/certificate-3.jpg"><img src="img/certificate-3-small.jpg" alt="Лицензия" width="302" height="434"></a>
+                <a class="fancybox certify__img certify__img--s4" rel="group" href="img/certificate-4.jpg"><img src="img/certificate-4-small.jpg" alt="Лицензия" width="302" height="434"></a>
+                <a class="fancybox certify__img certify__img--s5" rel="group" href="img/certificate-5.jpg"><img src="img/certificate-5-small.jpg" alt="Лицензия" width="302" height="434"></a>
             </div>
         </section>
         <section class="timer timer--bg4">
@@ -1002,8 +968,8 @@
             </div>
         </section>
         <section class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61125.03066311805!2d40.83809622212951!3d44.165825136674265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f7ad970d89c67b%3A0x599d2c7773ba7d24!2sSanatorium+%22Birches%22!5e0!3m2!1sen!2suk!4v1499411142974" width="1920" height="380" style="border:0" allowfullscreen></iframe>                
             <div class="map__wrap">
-                <div class="map__img"></div>
                 <div class="map__welcome">
                     <p class="map__title">Приезжайте к нам!</p>
                     <p class="map__text">Краснодарский край, Мостовский р-н, Псебай, ул. 60 лет Октября, 16 <span>Без выходных</span></p>
@@ -1060,15 +1026,18 @@
         $(".btn").click(function(){
             $(".modal-overlay").show();
         });
-        $(".certify__img").click(function(){
-            $(".modal-overlay").show();
-        });
         $(".modal__close").click(function(){
             $(".modal-overlay").hide();
         });
     });
     </script>
     <script src="js/fotorama.js"></script>
-    <script src="js/script.min.js"></script>
+    <script src="js/script.js"></script>
+    <script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+        $(".fancybox").fancybox();
+        });
+    </script>
 </body>
 </html>
