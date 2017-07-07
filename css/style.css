@@ -1905,6 +1905,20 @@ textarea {
   background-repeat: no-repeat;
   cursor: pointer;
 }
+.modal__close--consult,
+.modal__close--book,
+.modal__close--price,
+.modal__close--price2,
+.modal__close--room1,
+.modal__close--room2,
+.modal__close--book2,
+.modal__close--book3,
+.modal__close--phone {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-image: url(../img/icon-cross-white.svg);
+}
 .modal__title {
   margin: 0;
   color: #172d45;
@@ -1932,9 +1946,7 @@ textarea {
 .modal--book3,
 .modal--phone {
   width: 280px;
-  padding-left: 0;
-  padding-right: 0;
-  padding-bottom: 0;
+  padding: 0;
 }
 .modal__text {
   font-size: 16px;
